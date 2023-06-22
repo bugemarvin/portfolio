@@ -1,0 +1,68 @@
+.Resumes {
+  width: 100%;
+  padding: 1rem;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
+    rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+}
+
+.Resumes-header {
+  width: 100%;
+  justify-content: flex-start;
+  border-bottom: 1px solid;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+}
+.Resumes-header span,
+.Resumes-header2 span {
+  width: 100%;
+  font-size: 1.2rem;
+}
+.Resumes-obj {
+  width: 95%;
+}
+
+.Resumes-obj li {
+  font-size: 1.6rem;
+  font-weight: 300;
+}
+
+.Resumes-header2 {
+  width: 100%;
+}
+
+/* Media Query for screens with a maximum width of 768px */
+@media (max-width: 768px) {
+  .Resumes {
+    width: 100%;
+  }
+
+  .Resumes-header {
+    justify-content: center;
+  }
+
+  .Resumes-header span,
+  .Resumes-header2 span {
+    font-size: 1rem;
+  }
+
+  .Resumes-obj {
+    width: 100%;
+  }
+
+  .Resumes-obj li {
+    font-size: 1.2rem;
+  }
+
+  .Resumes-header2 {
+    justify-content: center;
+  }
+}
+
+/* Media Query for screens with a maximum width of 576px */
+@media (max-width: 576px) {
+  .Resumes-obj li {
+    font-size: 1.2rem;
+  }
+  .Resumes-header2 ~ .Headers {
+    font-size: 1.6rem !important;
+  }
+}
