@@ -1,0 +1,16 @@
+stages:
+  - deploy
+
+deploy:
+  stage: deploy
+  image: ubuntu
+  before_script:
+    - apt-get update -qy
+    - apt-get install -y openssh-client
+  script:
+    - echo "$SSH_PRIVATE_KEY" > ~/.ssh/id_rsa
+    - chmod 600 ~/.ssh/id_rsa
+    - ssh-keyscan -H $SSH_HOST >> ~/.ssh/known_hosts
+    - scp -r * ubuntu@$SSH_HOST:/path/to/website/
+    - ssh ubuntu@$SSH_HOST "cd /path/to/website && pm2 stop all && pm2 start app.js"
+
