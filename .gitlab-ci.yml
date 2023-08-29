@@ -1,8 +1,8 @@
 stages:
-  - deploy
+  - build 
 
 deploy:
-  stage: deploy
+  stage: build
   image: ubuntu
   before_script:
     - apt-get update -qy
