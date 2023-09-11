@@ -3,8 +3,9 @@ node_js:
   - 16
 
 before_install:
+  - nvm install 16
   - eval "$(ssh-agent -s)"
-  - echo "$DEPLOY_SSH_PRIVATE_KEY" | tr -d '\r' | ssh-add -
+  - echo "$DEPLOY_SSH_PRIVATE_KEY" | tr -d '\r' | ssh-add - <<< "$SSH_PASSSPHRASE"
   - git config --global push.default simple
 
 script:
