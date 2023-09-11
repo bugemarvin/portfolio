@@ -1,5 +1,19 @@
 language: node_js
 node_js:
   - 20
+
+before_install:
+  - eval "$(ssh-agent -s)"
+  - echo "$SSH_PRIVATE_KEY" | tr -d '\r' | ssh-add -
+
 script:
   - npm build
+
+deploy:
+  provider: script
+  skip_cleanup: true
+  script:
+    - rsync -r --delete-after --quiet $TRAVIS_BUILD_DIR/ ubuntu@:/home/ubuntu/portfolio
+    - ssh ubuntu@44.237.57.109 "cd /home/ubuntu/portfolio && npm install && pm2 restart My_portfolio"
+  on:
+    branch: main
