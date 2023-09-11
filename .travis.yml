@@ -1,44 +1,20 @@
 language: node_js
 node_js:
-  - 16  # Use the Node.js version you need for your project
+  - 16
 
-# Define the branches where you want Travis CI to run
-branches:
-  only:
-    - main  # Adjust this branch name as needed
+before_install:
+  - eval "$(ssh-agent -s)"
+  - echo "$DEPLOY_SSH_PRIVATE_KEY" | tr -d '\r' | ssh-add - <<< "$DEPLOY_SSH_PASSPHRASE"
+  - git config --global push.default simple
 
-# Define the stages for your CI/CD pipeline
-stages:
-  - build  # Run tests
-  - name: deploy  # Deploy to AWS EC2 instance
-    if: branch = main  # Deploy only when changes are pushed to the main branch
+script:
+  - npm build
 
-# Define the jobs for each stage
-jobs:
-  include:
-    - stage: build
-      name: "Run build"
-      script:
-        - npm install  # Install project dependencies
-        - npm build  # Run your tests here
-
-    - stage: deploy
-      name: "Deploy to AWS EC2"
-      before_install:
-        # Set up SSH key and known hosts
-        - echo -e "$DEPLOY_SSH_PRIVATE_KEY" | tr -d '\r' > ~/.ssh/deploy_key
-        - chmod 600 ~/.ssh/deploy_key
-        - ssh-keyscan -H 44.237.57.109 >> ~/.ssh/known_hosts
-
-      script:
-        # Copy files to the AWS server using rsync
-        - rsync -r --delete-after --quiet $TRAVIS_BUILD_DIR/ ubuntu@44.237.57.109:/home/ubuntu/portfolio
-
-        # SSH into the server to perform deployment tasks (e.g., install dependencies and restart the app)
-        - ssh -i ~/.ssh/deploy_key ubuntu@44.237.57.109 "cd /home/ubuntu/portfolio && npm install && pm2 restart My_portfolio"
-
-# Define encrypted environment variable for SSH private key
-env:
-  global:
-    - DEPLOY_SSH_PRIVATE_KEY
-
+deploy:
+  provider: script
+  skip_cleanup: true
+  script:
+    - rsync -r --delete-after --quiet $TRAVIS_BUILD_DIR/ ubuntu@:/home/ubuntu/portfolio
+    - ssh ubuntu@44.237.57.109 "cd /home/ubuntu/portfolio && npm install && pm2 restart My_portfolio"
+  on:
+    branch: main
