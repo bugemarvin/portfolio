@@ -8,7 +8,7 @@ export default function About() {
                         <div className='Contents About'>
                                 <p>I'm a motivated and aspiring software engineer, With a passion
                                         for crafting efficient and scalable solutions, I am dedicated to 
-                                        honing my skills in the ever-evolving world of software engineering.<br /><br />Currently, I am pursuing a Software Engineering 
+                                        honing my skills in the ever-evolving world of software engineering.<br /><br />Recent graduate of Software Engineering 
                                         Certificate at ALX Africa, with a specific focus on back-end technologies. 
                                         This comprehensive program has provided me with a strong foundation in software 
                                         development principles and practices, equipping me with the necessary tools to 

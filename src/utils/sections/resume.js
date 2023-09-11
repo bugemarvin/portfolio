@@ -9,6 +9,19 @@ export default function Resume() {
                                 <h1 className='Headers fRow'>Experince</h1>
                                 <div className='Resumes fCol'>
                                         <div className='fRow Resumes-header'>
+                                                <h1 className='Headers fRow'>Upwork | Remote</h1>
+                                                <span>September, 2021  - Present</span>
+                                        </div>
+                                        <h2 className='Headers fRow'>Position: Merchandiser </h2>
+                                        <ul className='Resumes-obj'>
+                                                <li>- DevOps</li>
+                                                <li>- Database Development</li>
+                                                <li>- Web scapping</li>
+                                                <li>- Fullstack Development</li>
+                                        </ul>
+                                </div>
+                                <div className='Resumes fCol'>
+                                        <div className='fRow Resumes-header'>
                                                 <h1 className='Headers fRow'>Cherryfield Ltd | Epz Athi-River</h1>
                                                 <span>August, 2020 - Present</span>
                                         </div>
@@ -31,19 +44,6 @@ export default function Resume() {
                                                 <li>- Data entry.</li>
                                                 <li>- Analysis of lay sheets for the amount of fabric used in production.</li>
                                                 <li>- Analyze the amount of fabric to be consumed in production.</li>
-                                        </ul>
-                                </div>
-                                <div className='Resumes fCol'>
-                                        <div className='fRow Resumes-header'>
-                                                <h1 className='Headers fRow'>Upwork | Remote</h1>
-                                                <span>September, 2021  - Present</span>
-                                        </div>
-                                        <h2 className='Headers fRow'>Position: Merchandiser </h2>
-                                        <ul className='Resumes-obj'>
-                                                <li>- DevOps</li>
-                                                <li>- Database Development</li>
-                                                <li>- Web scapping</li>
-                                                <li>- Fullstack Development</li>
                                         </ul>
                                 </div>
                                 <div className='Resumes fCol'>

@@ -56,3 +56,10 @@ li {
   text-align: center;
   justify-content: center;
 }
+
+/* Media Query for screens with a maximum width of 576px */
+@media (max-width: 576px) {
+  .Navigation nav h1 {
+    font-size: 2.6rem;
+  } 
+}
