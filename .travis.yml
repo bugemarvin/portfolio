@@ -4,7 +4,7 @@ node_js:
 
 before_install:
   - eval "$(ssh-agent -s)"
-  - echo "$DEPLOY_SSH_PRIVATE_KEY" | tr -d '\r' | ssh-add - <<< "$DEPLOY_SSH_PASSPHRASE"
+  - echo "$DEPLOY_SSH_PRIVATE_KEY" | tr -d '\r' | ssh-add -
   - git config --global push.default simple
 
 script:
