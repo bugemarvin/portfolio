@@ -145,7 +145,7 @@
   color: #fff;
   border-radius: 0.4rem;
   display: flex;
-  width: 4rem;
+  width: 2rem;
   text-align: center;
   justify-content: center;
   letter-spacing: 0.2rem;
@@ -165,6 +165,20 @@
   background-color: rgb(45, 48, 71);
   border-radius: 0.8rem;
   cursor: pointer;
+}
+
+.Cv-download {
+  position: fixed;
+  z-index: 200000;
+  top: 50%;
+  left: -4rem;
+  padding: 1rem;
+  border: none;
+  color: #fff;
+  background-color: rgb(45, 48, 71);
+  border-radius: 0.8rem;
+  cursor: pointer;
+  transform: rotate(90deg);
 }
 
 /* Media Query for screens with a maximum width of 768px */
@@ -208,6 +222,13 @@
     border-radius: 0;
     position: relative;
   }
+
+  .Logo-form {
+    font-weight: 400;
+    font-size: medium;
+    padding: 0.8rem;
+    width: fit-content;
+  }
 }
 
 /* Media Query for screens with a maximum width of 576px */
@@ -243,5 +264,6 @@
         padding: 1rem;
         align-self: center;
         text-align: center;
+        margin-top: 1rem;
   }
 }

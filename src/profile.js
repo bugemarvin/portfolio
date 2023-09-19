@@ -12,8 +12,16 @@ import { GiSkills } from "react-icons/gi";
 import { RiContactsFill } from "react-icons/ri";
 import { Link, animateScroll as scroll } from 'react-scroll';
 
-
 export default function Profiler() {
+        const cvUrl = './utils/img/projects/Marvin_kurland.pdf';
+        const handleDownload = () => {
+          const link = document.createElement('a');
+          link.href = cvUrl;
+          link.download = 'Marvin Kurland Resume.pdf';
+          document.body.appendChild(link);
+          link.click();
+          document.body.removeChild(link);
+        };
         const scrollToTop = () => {
                   scroll.scrollToTop();
                 };
@@ -46,6 +54,8 @@ export default function Profiler() {
                                 </div>
                         </div>
                         <button onClick={scrollToTop} className='Scroll-top'>Scroll to Top</button>
+                        <button onClick={handleDownload} className='Cv-download'>Download Cv</button>
+
                 </div>
         );
 }

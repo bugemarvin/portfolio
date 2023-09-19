@@ -1,6 +1,0 @@
-.Skill {
-  width: 95%;
-  align-items: flex-start;
-  justify-content: center;
-  flex-wrap: wrap;
-}
