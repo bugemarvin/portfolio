@@ -52,6 +52,10 @@
     font-size: 1rem;
   }
 
+  .logos {
+    display: none;
+  }
+
   .Resumes-obj {
     width: 100%;
   }
