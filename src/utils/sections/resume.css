@@ -35,16 +35,8 @@
   margin-right: -2rem
 }
 
-/* Media Query for screens with a maximum width of 868px */
-@media (max-width: 868px) {
-  .Headers {
-    font-size: 1.5rem;
-  }
-}
-
-
 /* Media Query for screens with a maximum width of 768px */
-@media (max-width: 768px) {
+@media (max-width: 830px) {
   .Resumes {
     width: 100%;
   }
@@ -54,6 +46,10 @@
     flex-wrap: inherit;
     gap: initial;
     width: 100%
+  }
+
+  .Headers {
+    font-size: 1.4rem;
   }
 
   .Resumes-header span,
