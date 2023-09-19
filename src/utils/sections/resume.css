@@ -36,6 +36,11 @@
 }
 
 /* Media Query for screens with a maximum width of 768px */
+@media (max-width: 822px) {
+  .Headers {
+    font-size: 1.5rem !important;
+}
+
 @media (max-width: 768px) {
   .Resumes {
     width: 100%;
