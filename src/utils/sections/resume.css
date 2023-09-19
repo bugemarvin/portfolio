@@ -30,8 +30,9 @@
 }
 
 .logos{
-  width: 16rem;
-  height: 6rem;
+  width: 13rem;
+  height: 4rem;
+  margin-right: -2rem
 }
 
 /* Media Query for screens with a maximum width of 768px */
