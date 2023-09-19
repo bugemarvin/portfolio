@@ -48,13 +48,10 @@
     width: 100%
   }
 
-  .Headers {
-    font-size: 1.4rem;
-  }
-
   .Resumes-header span,
   .Resumes-header2 span {
     font-size: 1rem;
+    padding: 1rem 1.5rem;
   }
 
   .logos {
