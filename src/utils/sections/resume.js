@@ -9,6 +9,8 @@ export default function Resume() {
                                 <h1 className='Headers fRow'>Experince</h1>
                                 <div className='Resumes fCol'>
                                         <div className='fRow Resumes-header'>
+                                                <img className="logos" src="https://p7.hiclipart.com/preview/798/102/487/upwork-freelancer-com-fiverr-peopleperhour-others.jpg"/>
+
                                                 <h1 className='Headers fRow'>Upwork | Remote</h1>
                                                 <span>September, 2021  - Present</span>
                                         </div>
@@ -21,6 +23,7 @@ export default function Resume() {
                                 </div>
                                 <div className='Resumes fCol'>
                                         <div className='fRow Resumes-header'>
+                                                <img className="logos" src="https://cherryfield.com/wp-content/uploads/2020/12/cf-logo.jpg"/>
                                                 <h1 className='Headers fRow'>Cherryfield Ltd | Epz Athi-River</h1>
                                                 <span>August, 2020 - August, 2023</span>
                                         </div>
@@ -51,6 +54,7 @@ export default function Resume() {
                                 </div>
                                 <div className='Resumes fCol'>
                                         <div className='fRow Resumes-header'>
+                                                <img className="logos" src="https://staffingafrica.com/nas.png"/>
                                                 <h1 className='Headers fRow'>Nas Servair | Nairobi</h1>
                                                 <span>August 2015 - November 2016</span>
                                         </div>
@@ -64,6 +68,7 @@ export default function Resume() {
                                 <h1 className='Headers fRow'>Education</h1>
                                 <div className='Resumes fCol'>
                                         <div className='fRow Resumes-header'>
+                                                <img className="logos" src="https://d3t1rrq9fohtv1.cloudfront.net/media/thumbnails/images/alx-organisation-logo-20190916-00002391/f6313bbddaca8b63d28b26a7b02bc3c7.jpg"/>
                                                 <h1 className='Headers fRow'>Alx Africa | Nairobi</h1>
                                                 <span>March 2022 - May 2023</span>
                                         </div>
@@ -75,6 +80,7 @@ export default function Resume() {
                                 </div>
                                 <div className='Resumes fCol'>
                                         <div className='fRow Resumes-header'>
+                                                <img className="logos" src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/10/KCAU_logo.svg/1200px-KCAU_logo.svg.png"/>
                                                 <h1 className='Headers fRow'>KCA University | Nairobi</h1>
                                                 <span>March 2015 - August 2018</span>
                                         </div>

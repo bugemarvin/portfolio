@@ -29,6 +29,12 @@
   width: 100%;
 }
 
+.logos{
+  width: 30%;
+  height: 3rem;
+  margin-right: -28px;
+}
+
 /* Media Query for screens with a maximum width of 768px */
 @media (max-width: 768px) {
   .Resumes {
@@ -36,7 +42,9 @@
   }
 
   .Resumes-header {
-    justify-content: center;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    gap: initial;
   }
 
   .Resumes-header span,
