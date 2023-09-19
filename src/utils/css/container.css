@@ -190,6 +190,7 @@
   .Container-main .Container .Menu {
     width: 100%;
     position: static;
+    display: none;
   }
 
   .Container-main .Container .Menu li {
