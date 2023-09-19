@@ -1,3 +1,4 @@
+/* eslint-disable jsx-a11y/alt-text */
 import './resume.css';
 
 export default function Resume () {
