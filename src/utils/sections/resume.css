@@ -48,7 +48,7 @@
 
   .Resumes-header {
     justify-content: space-around;
-    flex-wrap: wrap;
+    flex-wrap: inherit;
     gap: initial;
     width: 100%
   }
