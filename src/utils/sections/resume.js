@@ -9,8 +9,7 @@ export default function Resume() {
                                 <h1 className='Headers fRow'>Experince</h1>
                                 <div className='Resumes fCol'>
                                         <div className='fRow Resumes-header'>
-                                                <img className="logos" src="https://p7.hiclipart.com/preview/798/102/487/upwork-freelancer-com-fiverr-peopleperhour-others.jpg"/>
-
+                                                <img className="logos" src="https://www.citypng.com/public/uploads/preview/upwork-round-logo-icon-png-116625559716y405kvdce.png?v=2023070718"/>
                                                 <h1 className='Headers fRow'>Upwork | Remote</h1>
                                                 <span>September, 2021  - Present</span>
                                         </div>
@@ -23,7 +22,7 @@ export default function Resume() {
                                 </div>
                                 <div className='Resumes fCol'>
                                         <div className='fRow Resumes-header'>
-                                                <img className="logos" src="https://media.licdn.com/dms/image/C560BAQE3TSb0wYKoxg/company-logo_200_200/0/1612967802907?e=2147483647&v=beta&t=QtQPge5aCLT8kXcRBz1nG5-YCEFzP6YAo5pHLjYLYxk"/>
+                                                <img className="logos" src="https://cherryfield.com/wp-content/uploads/2020/12/cf-logo.jpg"/>
                                                 <h1 className='Headers fRow'>Cherryfield Ltd | Epz Athi-River</h1>
                                                 <span>August, 2020 - August, 2023</span>
                                         </div>
