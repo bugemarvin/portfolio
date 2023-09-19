@@ -12,38 +12,30 @@ export default function Resume() {
                                                 <h1 className='Headers fRow'>Upwork | Remote</h1>
                                                 <span>September, 2021  - Present</span>
                                         </div>
-                                        <h2 className='Headers fRow'>Position: Merchandiser </h2>
+                                        <h2 className='Headers fRow'>Position: Full-stack Software Engineer</h2>
                                         <ul className='Resumes-obj'>
-                                                <li>- DevOps</li>
-                                                <li>- Database Development</li>
-                                                <li>- Web scapping</li>
-                                                <li>- Fullstack Development</li>
+                                                <li>- Collaborated on diverse projects involving technologies such as Puppet, DevOps, MongoDB, and web development.</li>
+                                                <li>- Utilized HTML, CSS, JavaScript, and Python to create robust web solutions.</li>
+                                                <li>- Contributed to the development of RESTful APIs and microservices.</li>
                                         </ul>
                                 </div>
                                 <div className='Resumes fCol'>
                                         <div className='fRow Resumes-header'>
                                                 <h1 className='Headers fRow'>Cherryfield Ltd | Epz Athi-River</h1>
-                                                <span>August, 2020 - Present</span>
+                                                <span>August, 2020 - August, 2023</span>
                                         </div>
                                         <h2 className='Headers fRow'>Position: Merchandiser </h2>
                                         <ul className='Resumes-obj'>
-                                                <li>- Factory Management from start to shipment</li>
-                                                <li>- Analyzing and data entry of production reports.</li>
-                                                <li>- Analyze consumed Raw materials in production as well as its flow.</li>
-                                                <li>- Managing and following up of day to day productions by the factory.</li>
-                                                <li>- Communicate with customers about production, delays, and shipment status.</li>
-                                                <li>- Raw material costing and ordering</li>
-                                                <li>- Creation requisition for items to be used in production.</li>
-                                                <li>- Costing.</li>
+                                                <li>- Managed factory operations from start to shipment, including production analysis and data entry.</li>
+                                                <li>- Communicated with customers regarding production, delays, and shipment status.</li>
+                                                <li>- Conducted raw material costing, ordering, and created requisitions for production items.</li>
                                         </ul>
                                         <div className='fRow Resumes-header2'>
                                                 <h2 className='Headers fRow'>Position: Y-Analyst/Merchandising clerk </h2>
                                                 <span>June, 2018  - August, 2020 </span>
                                         </div>
                                         <ul className='Resumes-obj'>
-                                                <li>- Data entry.</li>
-                                                <li>- Analysis of lay sheets for the amount of fabric used in production.</li>
-                                                <li>- Analyze the amount of fabric to be consumed in production.</li>
+                                                <li>- Performed data entry and analyzed lay sheets for fabric consumption in production</li>
                                         </ul>
                                 </div>
                                 <div className='Resumes fCol'>
@@ -51,13 +43,10 @@ export default function Resume() {
                                                 <h1 className='Headers fRow'>Kite institute | Kajiado</h1>
                                                 <span>January, 2018 - June, 2018</span>
                                         </div>
-                                        <h2 className='Headers fRow'>Position: Network Administrator Intern</h2>
+                                        <h2 className='Headers fRow'>Position: IT Support Technician | Trainer Intern</h2>
                                         <ul className='Resumes-obj'>
-                                                <li>- Firewall, network, and server monitoring.</li>
-                                                <li>- Computer/server maintenance.</li>
-                                                <li>- Teaching computer repair and application packages.</li>
-                                                <li>- Designing school flyers.</li>
-                                                <li>- Teaching web development in HTML, CSS, and Javascript</li>
+                                                <li>- Monitored firewalls, network, and server operations.</li>
+                                                <li>- Provided training in computer repair/software installation and software application packages, and web development in HTML, CSS, and JavaScript.</li>
                                         </ul>
                                 </div>
                                 <div className='Resumes fCol'>
