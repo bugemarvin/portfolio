@@ -36,7 +36,13 @@ return (
                 <a href="https://coursefinder.marvinkurland.tech" target="_blank" rel="noopener noreferrer" class="Sub-link">Live Demo</a>
               </li>
               <li>
-                <a href="https://github.com/ngugimuchangi/CourseFinder" target="_blank" rel="noopener noreferrer" class="Sub-link">Github</a>
+                <a href="https://coursefinderapi.marvinbuge.tech" target="_blank" rel="noopener noreferrer" class="Sub-link">API's</a>
+              </li>
+              <li>
+                <a href="https://coursefinderapidocs.marvinbuge.tech" target="_blank" rel="noopener noreferrer" class="Sub-link">API's Docs</a>
+              </li>
+              <li>
+                <a href="https://github.com/bugemarvin/CourseFinder" target="_blank" rel="noopener noreferrer" class="Sub-link">Github</a>
               </li>
             </ul>
           </div>
