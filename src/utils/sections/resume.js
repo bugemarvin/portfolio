@@ -9,7 +9,7 @@ export default function Resume () {
         <h1 className='Headers fRow'>Experince</h1>
         <div className='Resumes fCol'>
           <div className='fRow Resumes-header'>
-            <img className='logos' src='https://www.citypng.com/public/uploads/preview/upwork-round-logo-icon-png-116625559716y405kvdce.png?v=2023070718' />
+            <img className='logos' src='https://media.licdn.com/dms/image/C4E0BAQFAvA55uI9RQQ/company-logo_100_100/0/1620158724382?e=1705536000&v=beta&t=a28uhniSNFvLEj7mnSOSnMzimatAG5DS7zOzE6gXYqA' />
             <h1 className='Headers fRow'>Upwork | Remote</h1>
             <span>September, 2021  - Present</span>
           </div>
