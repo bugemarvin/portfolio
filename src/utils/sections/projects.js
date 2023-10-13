@@ -7,6 +7,7 @@ import image3 from '../img/projects/course_finder/images3.png';
 import image4 from '../img/projects/course_finder/images4.png';
 import image5 from '../img/projects/course_finder/images5.png';
 import image6 from '../img/projects/course_finder/images6.png';
+import exploreHome from '../img/projects/explorer/home.png';
 
 
 export default function Projects () {
@@ -19,6 +20,9 @@ export default function Projects () {
     image4,
     image5,
     image6,
+  ];
+  const exporer = [
+    exploreHome
   ];
 
 return (
@@ -43,6 +47,22 @@ return (
               </li>
               <li>
                 <a href="https://github.com/bugemarvin/CourseFinder" target="_blank" rel="noopener noreferrer" class="Sub-link">Github</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div className='Contain fRow'>
+          <ImageSlider images={exporer}/>
+          <div className='Description fCol'>
+            <h2 className='Titles'>Explorer</h2>
+            <p className="Details">Explorer is a web application for travelers to meet and share their traveling experinces while visiting places arround the globe and have the feel a sense of their own community menbers and precence of self belonging.</p>
+            <p className="Details Staks">LAMP Stack</p>
+            <ul class="fRow Sub-Menu Staks">
+              <li>
+                <a href="https://explorer-tau-liart.vercel.app" target="_blank" rel="noopener noreferrer" class="Sub-link">Live Demo</a>
+              </li>
+              <li>
+                <a href="https://github.com/bugemarvin/explorer" target="_blank" rel="noopener noreferrer" class="Sub-link">Github</a>
               </li>
             </ul>
           </div>
