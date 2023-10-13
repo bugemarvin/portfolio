@@ -22,9 +22,20 @@ export default function Resume () {
         </div>
         <div className='Resumes fCol'>
           <div className='fRow Resumes-header'>
+            <img className='logos' src='https://media.licdn.com/dms/image/C4D0BAQGE5MUQMIaRuw/company-logo_100_100/0/1653646804396?e=1705536000&v=beta&t=j-gtou5FZBUiwZvP9Z-uptCxr8UoOjqNw06iQvDUFOs' />
+            <h1 className='Headers fRow'>Modtechy | Remote</h1>
+            <span>June, 2023  - August, 2023</span>
+          </div>
+          <h2 className='Headers fRow'>Position: Full-stack Software Engineer intern</h2>
+          <ul className='Resumes-obj'>
+            <li>- Utilized HTML, CSS, JavaScript, and other web frameworks to create robust web solutions.</li>
+          </ul>
+        </div>
+        <div className='Resumes fCol'>
+          <div className='fRow Resumes-header'>
             <img className='logos' src='https://cherryfield.com/wp-content/uploads/2020/12/cf-logo.jpg' />
             <h1 className='Headers fRow'>Cherryfield Ltd | Epz Athi-River</h1>
-            <span>August, 2020 - August, 2023</span>
+            <span>August, 2020 - June, 2023</span>
           </div>
           <h2 className='Headers fRow'>Position: Merchandiser </h2>
           <ul className='Resumes-obj'>
@@ -49,19 +60,6 @@ export default function Resume () {
           <ul className='Resumes-obj'>
             <li>- Monitored firewalls, network, and server operations.</li>
             <li>- Provided training in computer repair/software installation and software application packages, and web development in HTML, CSS, and JavaScript.</li>
-          </ul>
-        </div>
-        <div className='Resumes fCol'>
-          <div className='fRow Resumes-header'>
-            <img className='logos' src='https://staffingafrica.com/nas.png' />
-            <h1 className='Headers fRow'>Nas Servair | Nairobi</h1>
-            <span>August 2015 - November 2016</span>
-          </div>
-          <h2 className='Headers fRow'>Position: General Laundry Worker </h2>
-          <ul className='Resumes-obj'>
-            <li>- Organizing all samples (flight amenities) according to the daily flight schedule.</li>
-            <li>- In folding & packing blankets to be used by passengers.</li>
-            <li>- We are dispatching samples (flight amenities) and flight schedule requirements.</li>
           </ul>
         </div>
         <h1 className='Headers fRow'>Education</h1>
