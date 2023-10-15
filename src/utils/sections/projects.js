@@ -55,8 +55,8 @@ return (
           <ImageSlider images={exporer}/>
           <div className='Description fCol'>
             <h2 className='Titles'>Explorer</h2>
-            <p className="Details">Explorer is a web application for travelers to meet and share their traveling experinces while visiting places arround the globe and have the feel a sense of their own community menbers and precence of self belonging.</p>
-            <p className="Details Staks">LAMP Stack</p>
+            <p className="Details">Explorer is a web application for travelers to meet and share their traveling experiences while visiting places around the globe and have the feel a sense of their own community members and presence of self belonging.</p>
+            <p className="Details Staks">LAMP Stack, Python, Django, Scss, HTML/CSS</p>
             <ul class="fRow Sub-Menu Staks">
               <li>
                 <a href="https://explorer-tau-liart.vercel.app" target="_blank" rel="noopener noreferrer" class="Sub-link">Live Demo</a>
