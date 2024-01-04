@@ -48,7 +48,10 @@ export default function Resume () {
             <span>June, 2018  - August, 2020 </span>
           </div>
           <ul className='Resumes-obj'>
-            <li>- Performed data entry and analyzed lay sheets for fabric consumption in production</li>
+            <li>- Performed data entry and analyzed lay sheets for fabric consumption in production.</li>
+            <li>- Followed up on KPIs and initiated actions to reach store goals and budgets.</li>
+            <li>- Monitored visual material to maintain current plan-o-grams and initiate seasonal updates.</li>
+            <li>- Monitored inventory levels and managed product rotations for store availability.</li>
           </ul>
         </div>
         <div className='Resumes fCol'>
@@ -56,10 +59,16 @@ export default function Resume () {
             <h1 className='Headers fRow'>Kite institute | Kajiado</h1>
             <span>January, 2018 - June, 2018</span>
           </div>
-          <h2 className='Headers fRow'>Position: IT Support Technician | Trainer Intern</h2>
+          <h2 className='Headers fRow'>Position: IT Support Technician | Instructor Internship</h2>
           <ul className='Resumes-obj'>
-            <li>- Monitored firewalls, network, and server operations.</li>
             <li>- Provided training in computer repair/software installation and software application packages, and web development in HTML, CSS, and JavaScript.</li>
+            <li>- Maintained computer systems and acted as support for end user problems.</li>
+            <li>- Addressed system and user issues and identified solutions.</li>
+            <li>- Prepared software or hardware evaluations, recommending improvements or upgrades.</li>
+            <li>- Set up equipment based on staff needs and IT capabilities.</li>
+            <li>- Supported non-technical users by quickly investigating and resolving hardware and software issues.</li>
+            <li>- Removed broken or outdated hardware, replacing with new parts to achieve desired level of performance.</li>
+            <li>- Recorded daily activities completed, data communications and remedial action.</li>
           </ul>
         </div>
         <h1 className='Headers fRow'>Education</h1>

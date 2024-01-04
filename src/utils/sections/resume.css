@@ -81,6 +81,14 @@
   }
 }
 
+@media screen and (min-width: 724px) {
+  .Resumes-header span {
+    justify-content: flex-end;
+    display: flex;
+    margin-right: 1rem;
+  }
+}
+
 @media screen and (max-width: 723px) {
   .Resumes:nth-child(4) > .Resumes-header2 {
     display: flex;

@@ -6,11 +6,8 @@ export default function About() {
                 <div className='Section fCol' id="about">
                         <h1 className='Headers fRow'><span className='Logo-form'>Bio</span></h1>
                         <div className='Contents About'>
-                                <p>Dedicated and versatile Software Engineer with expertise in Node.js,
-                                        MongoDB, Python, C, DevOps, and JavaScript. Proven track record in
-                                        delivering high-quality back-end solutions that exceed industry
-                                        standards. Passionate about innovation and thriving in dynamic
-                                development environments</p>
+                                <p>I am a full stack software engineer professional offering diverse abilities in a wide range of programming languages, including Python, C, and JavaScript. Quickly understands requirements for new systems and creates robust code. Familiar with testing, debugging and correcting problems found in existing software systems.</p>
+                                <p>My long life commitment to learning drives me to stay updated with industry trends and technologies. I have had the privilege to work on diverse projects, sharpening my skills and adaptability. Let us connect and embark on an exciting journey together!</p>
                         </div>
                 </div>
         );
