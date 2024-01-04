@@ -130,7 +130,7 @@
     justify-content: flex-start;
   }
   .Resumes-header .Headers {
-    font-size: 2rem;
+    font-size: 1.6rem;
   }
   .Resumes-header2 .Headers {
     margin-top: -2rem;
@@ -141,9 +141,8 @@
     color: #2d3047;
     font-weight: 600;
     font-size: 1rem;
-    padding-left: 2.3rem;
     margin-bottom: -3rem;
-    width: 94%;
+    width: 95%;
   }
   .Resumes-header2  > span {
     position: relative;
@@ -153,7 +152,7 @@
     font-size: 1rem;
     margin-top: -2rem;
     margin-bottom: 1rem;
-    margin-left: -1.2rem;
+    width: 95%;
   }
 }
 
@@ -180,11 +179,7 @@
   }
   .Resumes-header2  > span {
     margin-top: -2rem;
-    left: -1.2rem;
     margin-bottom: 1rem;
-  }
-  .Resumes-header span {
-    padding-left: 1.2rem;
   }
 }
 
