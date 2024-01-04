@@ -102,7 +102,7 @@ export default function Resume () {
             <li>- Recorded daily activities completed, data communications and remedial action.</li>
           </ul>
         </div>
-        <h1 className='Headers fRow'>Education</h1>
+        <h1 className='Logo-form fRow'>Education</h1>
         <div className='Resumes fCol'>
           <div className='fRow Resumes-header'>
             <img className='logos' src='https://d3t1rrq9fohtv1.cloudfront.net/media/thumbnails/images/alx-organisation-logo-20190916-00002391/f6313bbddaca8b63d28b26a7b02bc3c7.jpg' />
