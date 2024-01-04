@@ -9,15 +9,29 @@ export default function Resume () {
         <h1 className='Headers fRow'>Experince</h1>
         <div className='Resumes fCol'>
           <div className='fRow Resumes-header'>
+            <img className='logos' src='https://media.licdn.com/dms/image/D4D2DAQFMLjIjmzMojA/profile-treasury-image-shrink_160_160/0/1703066223377?e=1705003200&v=beta&t=YAfcA3j8K4JMyr3iWS9dsVxCfm-Ou-tMCKUHSjxdbfc' />
+            <h1 className='Headers fRow'>Curiate Company | Remote</h1>
+            <span>October, 2021  - Present</span>
+          </div>
+          <h2 className='Headers fRow'>Position: Full-stack Software Engineer Internship</h2>
+          <ul className='Resumes-obj'>
+            <li>- Working on building an E-commerce Shopping platform for the fashion industry utilizing shopify tools..</li>
+          </ul>
+        </div>
+        <div className='Resumes fCol'>
+          <div className='fRow Resumes-header'>
             <img className='logos' src='https://media.licdn.com/dms/image/C4E0BAQFAvA55uI9RQQ/company-logo_100_100/0/1620158724382?e=1705536000&v=beta&t=a28uhniSNFvLEj7mnSOSnMzimatAG5DS7zOzE6gXYqA' />
             <h1 className='Headers fRow'>Upwork | Remote</h1>
-            <span>September, 2021  - Present</span>
+            <span>September, 2021  - December, 2023</span>
           </div>
-          <h2 className='Headers fRow'>Position: Full-stack Software Engineer</h2>
+          <h2 className='Headers fRow'>Position: Full Stack Software Engineer</h2>
           <ul className='Resumes-obj'>
-            <li>- Collaborated on diverse projects involving technologies such as Puppet, DevOps, MongoDB, and web development.</li>
-            <li>- Utilized HTML, CSS, JavaScript, and Python to create robust web solutions.</li>
-            <li>- Contributed to the development of RESTful APIs and microservices.</li>
+            <li>- Integrated Restful services and third-party APIs into legacy products and new solutions.</li>
+            <li>- Assessed technical issues, developing and implementing solutions for remediation.</li>
+            <li>- Produced code in programming languages to create the most effective and clean website.</li>
+            <li>- Liaised with corporate personnel regarding web development and technologies, providing recommendations, insight, and support as needed.</li>
+            <li>- Partnered with senior engineers to apply Agile development methodologies to prototype development tasks.</li>
+            <li>- Worked with engineering teams to define project scope and understand the planning process.</li>
           </ul>
         </div>
         <div className='Resumes fCol'>
@@ -26,9 +40,17 @@ export default function Resume () {
             <h1 className='Headers fRow'>Modtechy | Remote</h1>
             <span>June, 2023  - August, 2023</span>
           </div>
-          <h2 className='Headers fRow'>Position: Full-stack Software Engineer intern</h2>
+          <h2 className='Headers fRow'>Position: Full Stack Software Engineer Internship</h2>
           <ul className='Resumes-obj'>
-            <li>- Utilized HTML, CSS, JavaScript, and other web frameworks to create robust web solutions.</li>
+            <li>- Tested and determined application responsiveness for consumers, reporting performance weaknesses for remediation by development personnel.</li>
+            <li>- Remained current on latest technologies and tools by reading periodicals, speaking with experts and attending conferences.</li>
+            <li>- Updated web pages and navigation tools to meet client's current needs and improve usability.</li>
+            <li>- Produced code in programming languages to create most effective and clean websites.</li>
+            <li>- Improved coding of JavaScript and CSS to enhance user experience and functionality.</li>
+            <li>- Continuously studied and improved abilities with a wide range of web technologies, design tools and programming practices.</li>
+            <li>- Engaged in a cross-functional team to refactor and optimize critical code modules.</li>
+            <li>- Maintained and expanded knowledge of programming languages to write high-quality object-oriented code.</li>
+            <li>- Utilized industry-accepted testing methods to troubleshoot flaws.   </li>
           </ul>
         </div>
         <div className='Resumes fCol'>
@@ -39,9 +61,18 @@ export default function Resume () {
           </div>
           <h2 className='Headers fRow'>Position: Merchandiser </h2>
           <ul className='Resumes-obj'>
-            <li>- Managed factory operations from start to shipment, including production analysis and data entry.</li>
-            <li>- Communicated with customers regarding production, delays, and shipment status.</li>
+            <li>- Managed factory operations from start to shipment, including production analysis and data entry</li>
+            <li>- Communicated with buyers regarding production, delays, and shipment status</li>
             <li>- Conducted raw material costing, ordering, and created requisitions for production items.</li>
+            <li>- Processed high volume of orders daily and consistently met production targets.</li>
+            <li>- Coordinated and distributed backorders to meet customer needs.</li>
+            <li>- Inspected items to identify problems and worked with supervisors or vendors to correct issues.</li>
+            <li>- Observed all company safety policies and OSHA guidelines.</li>
+            <li>- Operated material handling equipment to move and organize stock.</li>
+            <li>- Kept inventory records accurate by conducting routine counts and complete audits of available products.</li>
+            <li>- Navigated storage system to locate items for order fulfillment.</li>
+            <li>- Collected and disposed of excess stock, defective items or obsolete materials.</li>
+            <li>- Verified proper packaging and labeling for each shipment to promote accuracy and safety of merchandise in transit.</li>
           </ul>
           <div className='fRow Resumes-header2'>
             <h2 className='Headers fRow'>Position: Y-Analyst/Merchandising clerk </h2>
