@@ -51,11 +51,13 @@
     gap: initial;
     width: 100%
   }
-
+  .Resumes-header .Headers {
+  }
   .Resumes-header span,
   .Resumes-header2 span {
     font-size: 1rem;
-    padding: 1rem 1.5rem;
+    /*padding: 1rem 1.5rem;*/
+    flex-shrink: 1;
   }
   .Resumes-header2 span {
     display: flex;
@@ -85,7 +87,7 @@
   }
 }
 
-@media screen and (min-width: 724px) {
+@media screen and (min-width: 764px) {
   .Resumes-header span,
   .Resumes-header2 span {
     justify-content: flex-end;
