@@ -173,14 +173,14 @@
   position: fixed;
   z-index: 200000;
   top: 43%;
-  left: -4rem;
+  right: -4rem;
   padding: 1rem;
   border: none;
   color: #fff;
   background-color: rgb(45, 48, 71);
   border-radius: 0.8rem;
   cursor: pointer;
-  transform: rotate(90deg);
+  transform: rotate(-90deg);
 }
 
 /* Media Query for screens with a maximum width of 1224px */
@@ -203,7 +203,7 @@
 @media (max-width: 788px) {
   .Container {
     flex-direction: column;
-    top: 11vh;
+    top: 15vh;
     left: -1rem;
   }
 
@@ -244,6 +244,10 @@
 
 /* Media Query for screens with a maximum width of 576px */
 @media (max-width: 576px) {
+  .Container {
+    top: 4vh;
+    left: -3.8px;
+  }
   .Container-main .Container .Profile-Navigation {
     display: none;
   }
