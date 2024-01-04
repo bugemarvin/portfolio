@@ -82,7 +82,8 @@
 }
 
 @media screen and (min-width: 724px) {
-  .Resumes-header span {
+  .Resumes-header span,
+  .Resumes-header2 span {
     justify-content: flex-end;
     display: flex;
     margin-right: 1rem;
