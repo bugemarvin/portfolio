@@ -143,6 +143,7 @@
     font-size: 1rem;
     padding-left: 2.3rem;
     margin-bottom: -3rem;
+    width: 94%;
   }
   .Resumes-header2  > span {
     position: relative;
@@ -150,10 +151,6 @@
     color: #2d3047;
     font-weight: 600;
     font-size: 1rem;
-    padding-left: 3.8rem;
-    margin-top: -1.4rem;
-  }
-  .Resumes-header2  > span {
     margin-top: -2rem;
     margin-bottom: 1rem;
     margin-left: -1.2rem;
