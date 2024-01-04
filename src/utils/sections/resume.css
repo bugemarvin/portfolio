@@ -141,8 +141,8 @@
     color: #2d3047;
     font-weight: 600;
     font-size: 1rem;
-    padding-left: 3.7rem;
-    margin-bottom: -4rem;
+    padding-left: 2.3rem;
+    margin-bottom: -3rem;
   }
   .Resumes-header2  > span {
     position: relative;
@@ -155,6 +155,8 @@
   }
   .Resumes-header2  > span {
     margin-top: -2rem;
+    margin-bottom: 1rem;
+    margin-left: -1.2rem;
   }
 }
 
@@ -181,10 +183,11 @@
   }
   .Resumes-header2  > span {
     margin-top: -2rem;
-    left: -0.5rem;
+    left: -1.2rem;
+    margin-bottom: 1rem;
   }
   .Resumes-header span {
-    padding-left: 3rem;
+    padding-left: 1.2rem;
   }
 }
 
@@ -193,7 +196,8 @@
     font-size: 1.4rem;
   }
   .Resumes-header2 > span {
-    left: -0.5rem;
+    left: -1.2rem;
+    margin-bottom: 1rem
   }
   .Headers {
     margin-top: 2rem;
