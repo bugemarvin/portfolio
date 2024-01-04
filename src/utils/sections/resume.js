@@ -97,7 +97,7 @@ export default function Resume () {
             <h1 className='Headers fRow'>Eagle plus | Nairobi</h1>
             <span>September 2014 - Nov 2014</span>
           </div>
-          <h2 className='Headers fRow'>Type: Certificate in Fire Prevention and Safety Technology/Technician </h2>
+          <h2 className='Headers fRow'>Type: Certificate in Fire Prevention and Technology </h2>
           <ul className='Resumes-obj'>
             <li>It has equipped me with specialized knowledge in fire protection systems,
               emergency response protocols, risk assessment, and safety regulations.
@@ -106,18 +106,6 @@ export default function Resume () {
               Technology/Technician, which has equipped me with specialized knowledge in fire protection systems,
               emergency response protocols, risk assessment, and safety regulations. <br />This training has
               enhanced my ability to identify fire hazards, implement safety measures, and develop emergency evacuation plans.
-            </li>
-          </ul>
-        </div>
-        <div className='Resumes fCol'>
-          <div className='fRow Resumes-header'>
-            <h1 className='Headers fRow'>Obera Boys High School  | Nyanza</h1>
-            <span>February 2009 - November 2012</span>
-          </div>
-          <h2 className='Headers fRow'>Type: High School Diploma </h2>
-          <ul className='Resumes-obj'>
-            <li>I have successfully obtained a high school diploma,
-              providing me with a solid educational foundation and a diverse range of academic skills.
             </li>
           </ul>
         </div>
