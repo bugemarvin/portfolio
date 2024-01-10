@@ -40,7 +40,7 @@ return (
                 <a href="https://www.coursefinder.marvinbuge.tech" target="_blank" rel="noopener noreferrer" class="Sub-link">Live Demo</a>
               </li>
               <li>
-                <a href="https://www.coursefinder.api.marvinbuge.tech" target="_blank" rel="noopener noreferrer" class="Sub-link">API's</a>
+                <a href="https://www.coursefinder.api.marvinbuge.tech/categories" target="_blank" rel="noopener noreferrer" class="Sub-link">API's</a>
               </li>
               <li>
                 <a href="https://www.coursefinder.api.docs.marvinbuge.tech" target="_blank" rel="noopener noreferrer" class="Sub-link">API's Docs</a>
