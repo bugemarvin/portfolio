@@ -37,13 +37,13 @@ return (
             <p className="Details Staks">React, Express, MongoDB, BullMQ, Redis, Natural, Puppeteer</p>
             <ul class="fRow Sub-Menu Staks">
               <li>
-                <a href="https://coursefinder.marvinkurland.tech" target="_blank" rel="noopener noreferrer" class="Sub-link">Live Demo</a>
+                <a href="https://www.coursefinder.marvinbuge.tech" target="_blank" rel="noopener noreferrer" class="Sub-link">Live Demo</a>
               </li>
               <li>
-                <a href="https://coursefinderapi.marvinbuge.tech" target="_blank" rel="noopener noreferrer" class="Sub-link">API's</a>
+                <a href="https://www.coursefinder.api.marvinbuge.tech" target="_blank" rel="noopener noreferrer" class="Sub-link">API's</a>
               </li>
               <li>
-                <a href="https://coursefinderapidocs.marvinbuge.tech" target="_blank" rel="noopener noreferrer" class="Sub-link">API's Docs</a>
+                <a href="https://www.coursefinder.api.docs.marvinbuge.tech" target="_blank" rel="noopener noreferrer" class="Sub-link">API's Docs</a>
               </li>
               <li>
                 <a href="https://github.com/bugemarvin/CourseFinder" target="_blank" rel="noopener noreferrer" class="Sub-link">Github</a>
