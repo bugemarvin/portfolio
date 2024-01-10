@@ -77,23 +77,17 @@ return (
           </div>
         </div>
         <div className='Contain fRow'>
-           <ImageSlider images={images}/>
+           <ImageSlider images={protfolio}/>
            <div className='Description fCol'>
              <h2 className='Titles'>Portfolio</h2>
              <p className="Details">This project showcases my skills, projects, and professional journey in a sleek and interactive manner. With a modern design and smooth navigation, this website provides visitors with a comprehensive overview of my expertise and achievements. </p>
              <p className="Details Staks">React, AWS, Redux, Pm2, Nginx</p>
              <ul class="fRow Sub-Menu Staks">
                <li>
-                 <a href="https://www.coursefinder.marvinbuge.tech" target="_blank" rel="noopener noreferrer" class="Sub-link">Live Demo</a>
+                 <a href="https://portfolio.marvinbuge.tech" target="_blank" rel="noopener noreferrer" class="Sub-link">Live Demo</a>
                </li>
                <li>
-                 <a href="https://www.coursefinder.api.marvinbuge.tech/categories" target="_blank" rel="noopener noreferrer" class="Sub-link">    API's</a>
-               </li>
-               <li>
-                 <a href="https://www.coursefinder.api.docs.marvinbuge.tech" target="_blank" rel="noopener noreferrer" class="Sub-link">API's     Docs</a>
-               </li>
-               <li>
-                 <a href="https://github.com/bugemarvin/CourseFinder" target="_blank" rel="noopener noreferrer" class="Sub-link">Github</a>
+                 <a href="https://github.com/bugemarvin/portfolio" target="_blank" rel="noopener noreferrer" class="Sub-link">Github</a>
                </li>
              </ul>
            </div>
