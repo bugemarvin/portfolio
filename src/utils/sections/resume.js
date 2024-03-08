@@ -31,7 +31,7 @@ export default function Resume () {
             <h1 className='Headers fRow'>Curiate Company</h1>
             <span>October, 2023 - March 2024</span>
           </div>
-          <h2 className='Headers fRow'>Position: Full-stack Software Engineer<br> /Type: Internship<br />Location: United States · Remote</h2>
+          <h2 className='Headers fRow'>Position: Full-stack Software Engineer<br /> Type: Internship<br />Location: United States · Remote</h2>
           <ul className='Resumes-obj'>
             <li>- Integrated Restful services and third-party APIs into legacy products and new solutions.</li>
             <li>- Assessed technical issues, developing and implementing solutions for remediation.</li>
