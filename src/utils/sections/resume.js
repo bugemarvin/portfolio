@@ -1,5 +1,8 @@
 /* eslint-disable jsx-a11y/alt-text */
 import './resume.css';
+import Curiate from '../img/logos/curiateco_logo.jpeg';
+import Modtechy from '../img/logos/modtechy_limited_logo.jpeg';
+import Melian from '../img/logos/melian_dialogue_research_logo.jpeg'; 
 
 export default function Resume () {
   return (
@@ -9,22 +12,26 @@ export default function Resume () {
         <h1 className='Headers fRow'>Experince</h1>
         <div className='Resumes fCol'>
           <div className='fRow Resumes-header'>
-            <img className='logos' src='https://media.licdn.com/dms/image/D4D2DAQFMLjIjmzMojA/profile-treasury-image-shrink_160_160/0/1703066223377?e=1705003200&v=beta&t=YAfcA3j8K4JMyr3iWS9dsVxCfm-Ou-tMCKUHSjxdbfc' />
-            <h1 className='Headers fRow'>Curiate Company | Remote</h1>
-            <span>October, 2021  - Present</span>
+            <img className='logos' src={Melian} />
+            <h1 className='Headers fRow'>Melian Dialogue Research | Contract</h1>
+            <span>February, 2024 - To date</span>
           </div>
-          <h2 className='Headers fRow'>Position: Full-stack Software Engineer Internship</h2>
+          <h2 className='Headers fRow'>Position: Full-stack Software Engineer</h2>
           <ul className='Resumes-obj'>
-            <li>- Working on building an E-commerce Shopping platform for the fashion industry utilizing shopify tools..</li>
+            <li>- Build Restful services and third-party APIs into legacy products and new solutions.</li>
+            <li>- Develop and implement solutions for User Interfaces.</li>
+            <li>- Produced code in programming languages to create the most effective and clean website.</li>
+            <li>- Liaised with corporate personnel regarding web development and technologies, providing recommendations, insight, and support as needed.</li>
+            <li>- Build Large language models for software solutions.</li>
           </ul>
         </div>
         <div className='Resumes fCol'>
           <div className='fRow Resumes-header'>
-            <img className='logos' src='https://media.licdn.com/dms/image/C4E0BAQFAvA55uI9RQQ/company-logo_100_100/0/1620158724382?e=1705536000&v=beta&t=a28uhniSNFvLEj7mnSOSnMzimatAG5DS7zOzE6gXYqA' />
-            <h1 className='Headers fRow'>Upwork | Remote</h1>
-            <span>September, 2021  - December, 2023</span>
+            <img className='logos' src={Curiate} />
+            <h1 className='Headers fRow'>Curiate Company | Remote</h1>
+            <span>October, 2023 - March 2024</span>
           </div>
-          <h2 className='Headers fRow'>Position: Full Stack Software Engineer</h2>
+          <h2 className='Headers fRow'>Position: Full-stack Software Engineer Internship</h2>
           <ul className='Resumes-obj'>
             <li>- Integrated Restful services and third-party APIs into legacy products and new solutions.</li>
             <li>- Assessed technical issues, developing and implementing solutions for remediation.</li>
@@ -36,7 +43,7 @@ export default function Resume () {
         </div>
         <div className='Resumes fCol'>
           <div className='fRow Resumes-header'>
-            <img className='logos' src='https://media.licdn.com/dms/image/C4D0BAQGE5MUQMIaRuw/company-logo_100_100/0/1653646804396?e=1705536000&v=beta&t=j-gtou5FZBUiwZvP9Z-uptCxr8UoOjqNw06iQvDUFOs' />
+            <img className='logos' src={Modtechy} />
             <h1 className='Headers fRow'>Modtechy | Remote</h1>
             <span>June, 2023  - August, 2023</span>
           </div>
@@ -129,23 +136,6 @@ export default function Resume () {
               cybersecurity, systems analysis, and web technologies. This hands-on program
               prepared me to tackle real-world challenges and stay updated with emerging
               industry trends.
-            </li>
-          </ul>
-        </div>
-        <div className='Resumes fCol'>
-          <div className='fRow Resumes-header'>
-            <h1 className='Headers fRow'>Eagle plus | Nairobi</h1>
-            <span>September 2014 - Nov 2014</span>
-          </div>
-          <h2 className='Headers fRow'>Type: Certificate in Fire Prevention and Technology </h2>
-          <ul className='Resumes-obj'>
-            <li>It has equipped me with specialized knowledge in fire protection systems,
-              emergency response protocols, risk assessment, and safety regulations.
-              <br />This training has enhanced my ability to identify fire hazards, implement safety
-              measures, and develop emergency evacuation plans.a Certificate in Fire Prevention and Safety
-              Technology/Technician, which has equipped me with specialized knowledge in fire protection systems,
-              emergency response protocols, risk assessment, and safety regulations. <br />This training has
-              enhanced my ability to identify fire hazards, implement safety measures, and develop emergency evacuation plans.
             </li>
           </ul>
         </div>
