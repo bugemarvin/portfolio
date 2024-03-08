@@ -66,7 +66,7 @@ export default function Resume () {
             <h1 className='Headers fRow'>Cherryfield Ltd | Epz Athi-River</h1>
             <span>August, 2020 - June, 2023</span>
           </div>
-          <h2 className='Headers fRow'>Position: Merchandiser </h2>
+          <h2 className='Headers fRow'>Position: Merchandiser<br>Type: Employment <br>Location: Kenya · Onsite </h2>
           <ul className='Resumes-obj'>
             <li>- Managed factory operations from start to shipment, including production analysis and data entry</li>
             <li>- Communicated with buyers regarding production, delays, and shipment status</li>
@@ -82,7 +82,7 @@ export default function Resume () {
             <li>- Verified proper packaging and labeling for each shipment to promote accuracy and safety of merchandise in transit.</li>
           </ul>
           <div className='fRow Resumes-header2'>
-            <h2 className='Headers fRow'>Position: Y-Analyst/Merchandising clerk </h2>
+            <h2 className='Headers fRow'>Position: Y-Analyst/Merchandising clerk<br>Type: Employment <br>Location: Kenya · Onsite </h2>
             <span>June, 2018  - August, 2020 </span>
           </div>
           <ul className='Resumes-obj'>
@@ -97,7 +97,7 @@ export default function Resume () {
             <h1 className='Headers fRow'>Kite institute | Kajiado</h1>
             <span>January, 2018 - June, 2018</span>
           </div>
-          <h2 className='Headers fRow'>Position: IT Support Technician | Instructor Internship</h2>
+          <h2 className='Headers fRow'>Position: IT Support Technician | Instructor Internship<br>Type: Employment <br>Location: Kenya · Onsite</h2>
           <ul className='Resumes-obj'>
             <li>- Provided training in computer repair/software installation and software application packages, and web development in HTML, CSS, and JavaScript.</li>
             <li>- Maintained computer systems and acted as support for end user problems.</li>
