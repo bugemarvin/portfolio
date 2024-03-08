@@ -13,10 +13,10 @@ export default function Resume () {
         <div className='Resumes fCol'>
           <div className='fRow Resumes-header'>
             <img className='logos' src={Melian} />
-            <h1 className='Headers fRow'>Melian Dialogue Research | Contract</h1>
+            <h1 className='Headers fRow'>Melian Dialogue Research</h1>
             <span>February, 2024 - To date</span>
           </div>
-          <h2 className='Headers fRow'>Position: Full-stack Software Engineer</h2>
+          <h2 className='Headers fRow'>Position: Full-stack Software Engineer <br>Type: Contract <br>Location: London Area, United Kingdom · Remote</h2>
           <ul className='Resumes-obj'>
             <li>- Build Restful services and third-party APIs into legacy products and new solutions.</li>
             <li>- Develop and implement solutions for User Interfaces.</li>
@@ -28,10 +28,10 @@ export default function Resume () {
         <div className='Resumes fCol'>
           <div className='fRow Resumes-header'>
             <img className='logos' src={Curiate} />
-            <h1 className='Headers fRow'>Curiate Company | Remote</h1>
+            <h1 className='Headers fRow'>Curiate Company</h1>
             <span>October, 2023 - March 2024</span>
           </div>
-          <h2 className='Headers fRow'>Position: Full-stack Software Engineer Internship</h2>
+          <h2 className='Headers fRow'>Position: Full-stack Software Engineer<br>Type: Internship <br>Location: United States · Remote</h2>
           <ul className='Resumes-obj'>
             <li>- Integrated Restful services and third-party APIs into legacy products and new solutions.</li>
             <li>- Assessed technical issues, developing and implementing solutions for remediation.</li>
@@ -44,10 +44,10 @@ export default function Resume () {
         <div className='Resumes fCol'>
           <div className='fRow Resumes-header'>
             <img className='logos' src={Modtechy} />
-            <h1 className='Headers fRow'>Modtechy | Remote</h1>
+            <h1 className='Headers fRow'>Modtechy</h1>
             <span>June, 2023  - August, 2023</span>
           </div>
-          <h2 className='Headers fRow'>Position: Full Stack Software Engineer Internship</h2>
+          <h2 className='Headers fRow'>Position: Full Stack Software Engineer<br>Type: Internship <br>Location: Kenya · Remote</h2>
           <ul className='Resumes-obj'>
             <li>- Tested and determined application responsiveness for consumers, reporting performance weaknesses for remediation by development personnel.</li>
             <li>- Remained current on latest technologies and tools by reading periodicals, speaking with experts and attending conferences.</li>
