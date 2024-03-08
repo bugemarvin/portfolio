@@ -97,7 +97,7 @@ export default function Resume () {
             <h1 className='Headers fRow'>Kite institute | Kajiado</h1>
             <span>January, 2018 - June, 2018</span>
           </div>
-          <h2 className='Headers fRow'>Position: IT Support Technician | Instructor Internship<br>Type: Employment <br>Location: Kenya · Onsite</h2>
+          <h2 className='Headers fRow'>Position: IT Support Technician | Instructor Internship<br>Type: Internship <br>Location: Kenya · Onsite</h2>
           <ul className='Resumes-obj'>
             <li>- Provided training in computer repair/software installation and software application packages, and web development in HTML, CSS, and JavaScript.</li>
             <li>- Maintained computer systems and acted as support for end user problems.</li>
