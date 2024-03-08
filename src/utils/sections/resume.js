@@ -16,7 +16,7 @@ export default function Resume () {
             <h1 className='Headers fRow'>Melian Dialogue Research</h1>
             <span>February, 2024 - To date</span>
           </div>
-          <h2 className='Headers fRow'>Position: Full-stack Software Engineer <br>Type: Contract</br><br>Location: London Area, United Kingdom · Remote</br></h2>
+          <h2 className='Headers fRow'>Position: Full-stack Software Engineer <br />Type: Contract <br />Location: London Area, United Kingdom · Remote</h2>
           <ul className='Resumes-obj'>
             <li>- Build Restful services and third-party APIs into legacy products and new solutions.</li>
             <li>- Develop and implement solutions for User Interfaces.</li>
@@ -31,7 +31,7 @@ export default function Resume () {
             <h1 className='Headers fRow'>Curiate Company</h1>
             <span>October, 2023 - March 2024</span>
           </div>
-          <h2 className='Headers fRow'>Position: Full-stack Software Engineer<br>Type: Internship</br><br>Location: United States · Remote</br></h2>
+          <h2 className='Headers fRow'>Position: Full-stack Software Engineer<br> /Type: Internship<br />Location: United States · Remote</h2>
           <ul className='Resumes-obj'>
             <li>- Integrated Restful services and third-party APIs into legacy products and new solutions.</li>
             <li>- Assessed technical issues, developing and implementing solutions for remediation.</li>
@@ -47,7 +47,7 @@ export default function Resume () {
             <h1 className='Headers fRow'>Modtechy</h1>
             <span>June, 2023  - August, 2023</span>
           </div>
-          <h2 className='Headers fRow'>Position: Full Stack Software Engineer<br>Type: Internship</br><br>Location: Kenya · Remote</br></h2>
+          <h2 className='Headers fRow'>Position: Full Stack Software Engineer<br />Type: Internship<br />Location: Kenya · Remote</h2>
           <ul className='Resumes-obj'>
             <li>- Tested and determined application responsiveness for consumers, reporting performance weaknesses for remediation by development personnel.</li>
             <li>- Remained current on latest technologies and tools by reading periodicals, speaking with experts and attending conferences.</li>
@@ -66,7 +66,7 @@ export default function Resume () {
             <h1 className='Headers fRow'>Cherryfield Ltd | Epz Athi-River</h1>
             <span>August, 2020 - June, 2023</span>
           </div>
-          <h2 className='Headers fRow'>Position: Merchandiser<br>Type: Employment</br><br>Location: Kenya · Onsite</br></h2>
+          <h2 className='Headers fRow'>Position: Merchandiser<br />Type: Employment<br />Location: Kenya · Onsite</h2>
           <ul className='Resumes-obj'>
             <li>- Managed factory operations from start to shipment, including production analysis and data entry</li>
             <li>- Communicated with buyers regarding production, delays, and shipment status</li>
@@ -82,7 +82,7 @@ export default function Resume () {
             <li>- Verified proper packaging and labeling for each shipment to promote accuracy and safety of merchandise in transit.</li>
           </ul>
           <div className='fRow Resumes-header2'>
-            <h2 className='Headers fRow'>Position: Y-Analyst/Merchandising clerk<br>Type: Employment</br><br>Location: Kenya · Onsite</br> </h2>
+            <h2 className='Headers fRow'>Position: Y-Analyst/Merchandising clerk<br />Type: Employment<br />Location: Kenya · Onsite</h2>
             <span>June, 2018  - August, 2020 </span>
           </div>
           <ul className='Resumes-obj'>
@@ -97,7 +97,7 @@ export default function Resume () {
             <h1 className='Headers fRow'>Kite institute | Kajiado</h1>
             <span>January, 2018 - June, 2018</span>
           </div>
-          <h2 className='Headers fRow'>Position: IT Support Technician | Instructor Internship<br>Type: Internship</br><br>Location: Kenya · Onsite</br></h2>
+          <h2 className='Headers fRow'>Position: IT Support Technician | Instructor Internship<br />Type: Internship<br />Location: Kenya · Onsite</h2>
           <ul className='Resumes-obj'>
             <li>- Provided training in computer repair/software installation and software application packages, and web development in HTML, CSS, and JavaScript.</li>
             <li>- Maintained computer systems and acted as support for end user problems.</li>
