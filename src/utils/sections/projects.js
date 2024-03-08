@@ -27,12 +27,6 @@ export default function Projects () {
   const exporer = [
     exploreHome
   ];
-  const protfolio = [
-    image_p,
-    image_p1,
-    image_p2,
-    image_p3,
-  ];
 
 return (
     <div className='Section fCol' id='projects'>
