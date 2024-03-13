@@ -55,7 +55,6 @@ export default function Profiler() {
                                         </div>
                                         <ul className='Profile Menu'>
                                                 <li><Link to="header" smooth={true} duration={500} offset={-100} spy={true}><FaHome />Home</Link></li>
-                                                <li><Link to="about" smooth={true} duration={500} offset={-100} spy={true}><BsInfoSquareFill />About</Link></li>
                                                 <li><Link to="skills" smooth={true} duration={500} offset={-100} spy={true}><GiSkills />Skills</Link></li>
                                                 <li><Link to="resume" smooth={true} duration={500} offset={-100} spy={true}><FaUserGraduate />Resume</Link></li>
                                                 <li><Link to="projects" smooth={true} duration={500} offset={-100} spy={true}><FaProjectDiagram />Projects</Link></li>

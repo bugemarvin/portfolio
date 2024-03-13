@@ -24,7 +24,7 @@
   font-size: 2.4rem;
 }
 
-@media screen and (max-width: 788px) {
+@media screen and (max-width: 838px) {
   .Banner {
     flex-direction: column;
     align-items: center;
