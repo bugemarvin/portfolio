@@ -96,12 +96,16 @@
   .Contents__menu {
     gap: 0.4rem;
   }
+  .Contents__menu .menu__link {
+    font-size: 1.4rem;
+    padding: 0.5rem;
+  }
 }
 
 @media (max-width: 356px) {
   .Contents__menu .menu__link {
     font-size: 1.2rem;
-    padding: 0.6rem;
+    padding: 0.3rem;
   }
 }
 
