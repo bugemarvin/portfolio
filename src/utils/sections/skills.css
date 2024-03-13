@@ -89,7 +89,7 @@
 }
 
 /* Media Query for screens with a maximum width of 576px */
-@media (max-width: 576px) {
+@media (max-width: 620px) {
   .list li {
     font-size: 1.4rem;
   }
