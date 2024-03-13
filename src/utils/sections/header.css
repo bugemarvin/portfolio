@@ -54,4 +54,7 @@
     text-align: center;
     flex-direction: column;
   }
+  .Banner__text h3 {
+    font-size: 1.5rem;
+  }
 }

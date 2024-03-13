@@ -5,6 +5,37 @@
   flex-wrap: wrap;
 }
 
+.Contents__menu {
+  width: 100%;
+  height: 5vh;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.Contents__menu .menu__link {
+  border: none;
+  background-color: transparent;
+  color: #343a40;
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.Contents__menu .menu__link.active {
+  font-weight: 500;
+  border-bottom: 2px solid #343a40;
+
+}
+
+.Contents__menu .menu__link:hover {
+  cursor: pointer;
+  color: #343a40;
+  font-weight: 500;
+  border-bottom: 2px solid #343a40;
+}
+
 .list {
   flex-wrap: wrap;
   box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
@@ -48,5 +79,8 @@
 @media (max-width: 576px) {
   .list li {
     font-size: 1.4rem;
+  }
+  .Contents__menu {
+    gap: 0.4rem;
   }
 }

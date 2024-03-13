@@ -141,7 +141,6 @@
     color: #2d3047;
     font-weight: 600;
     font-size: 1rem;
-    margin-bottom: -3rem;
     width: 95%;
   }
   .Resumes-header2  > span {
@@ -151,7 +150,7 @@
     font-weight: 600;
     font-size: 1rem;
     margin-top: -2rem;
-    margin-bottom: 1rem;
+    margin-bottom: 2rem;
     width: 95%;
   }
 }

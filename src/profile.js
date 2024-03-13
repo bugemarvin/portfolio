@@ -2,7 +2,6 @@ import React, { useState, useEffect } from 'react';
 import './utils/css/container.css';
 import Marvin from "./utils/img/pic.png"
 import Header from "./utils/sections/header";
-import About from "./utils/sections/about";
 import Skills from "./utils/sections/skills";
 import Resume from "./utils/sections/resume";
 import Projects from "./utils/sections/projects";
@@ -66,7 +65,6 @@ export default function Profiler() {
                                 </div>
                                 <div className=' Profile Profile-Info'>
                                         <Header />
-                                        <About />
                                         <Skills />
                                         <Resume />
                                         <Projects />

@@ -300,7 +300,6 @@
         transform: scale(1);
         padding: 1rem;
         align-self: center;
-        text-align: center;
-        margin-top: 1rem;
+        text-align: start;
   }
 }

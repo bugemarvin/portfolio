@@ -24,7 +24,6 @@ export default function Nav() {
                                         <button className={`${isMenuOpen ? 'BtnClose' : 'BtnOpen'} Btn`} onClick={toggle}>{isMenuOpen ? 'X' : <FaBars />}</button>
                                         <ul className={isMenuOpen ? 'MenuItemsClose' : 'MenuItemsOpen'}>
                                                 <li><Link to="header" smooth={true} duration={500} offset={-100} spy={true}><span><FaHome /></span><span className='Link_navs'>Home</span></Link></li>
-                                                <li><Link to="about" smooth={true} duration={500} offset={-100} spy={true}><span><BsInfoSquareFill /></span><span className='Link_navs'>About</span></Link></li>
                                                 <li><Link to="skills" smooth={true} duration={500} offset={-100} spy={true}><span><GiSkills /></span><span className='Link_navs'>Skills</span></Link></li>
                                                 <li><Link to="resume" smooth={true} duration={500} offset={-100} spy={true}><span><FaUserGraduate /></span><span className='Link_navs'>Resume</span></Link></li>
                                                 <li><Link to="projects" smooth={true} duration={500} offset={-100} spy={true}><span><FaProjectDiagram /></span><span className='Link_navs'>Projects</span></Link></li>

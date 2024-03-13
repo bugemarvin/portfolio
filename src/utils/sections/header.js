@@ -97,6 +97,15 @@ export default function Header () {
                 'In case you are intrested in saying \u{1F44B}.',
               ]}
               wrapper='h3'
+              cursor={false}
+            />
+            <TypeAnimation
+              sequence={[
+                '',
+                23500,
+                `Let's us embark on an exciting journey together!`,
+              ]}
+              wrapper='h3'
               cursor={true}
             />
           </div>
