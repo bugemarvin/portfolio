@@ -17,9 +17,15 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 1rem;
   border-radius: 1rem;
-  position: inherit;
+}
+
+.Container-main .Container .Profile-Info {
+  position: absolute;
+  right: 0;
+  gap: 2rem;
+  margin: 0 4rem 0 0;
+  width: 80%;
 }
 
 .Container-main .Container .Profile-Navigation {
@@ -30,15 +36,12 @@
   position: fixed;
   z-index: 100;
   color: #343a40;
-  left: 4rem;
-  top: 8.2rem;
+  left: 0rem;
+  margin-left: 1.5rem;
 }
 
-.Container-main .Container .Profile-Info {
-  width: 80%;
-  position: absolute;
-  right: 0;
-  gap: 2rem;
+.Container-main .Container .User-details {
+  margin: 4rem;
 }
 
 .Container-main .Container .User-details,
@@ -124,6 +127,7 @@
   border-radius: 2rem;
   justify-content: center;
   background-color: #fff;
+  padding: 2rem;
 }
 
 .Headers {
@@ -184,27 +188,46 @@
 }
 
 /* Media Query for screens with a maximum width of 1224px */
-@media (max-width: 1224px) {
+@media screen and (max-width: 1224px) {
   .Container-main .Container .User-details {
     text-align: center;
+  }
+  .Container-main .Container .Profile-Info {
+    width: 78%;
+  }
+  .Container-main .Container .Profile-Navigation {
+    width: 13%;
+    left: 0rem
+  }
+  .Container-main .Container .User-details span {
+    font-size: 1.7rem;
+  }
+  .Container-main .Container .User-details h2 {
+    font-size: 1.5rem;
+  }
+}
+/* Media Query for screens with a maximum width of 910px */
+@media screen and (max-width: 998px) {
+  .Container-main .Container .Profile-Info {
+    width: 74%;
+  }
+  .Container-main .Container .Profile-Navigation {
+    width: 15%;
+    left: 0rem
+  }
+  .Container-main .Container .User-details span {
+    font-size: 1.4rem;
+  }
+  .Container-main .Container .User-details h2 {
+    font-size: 1.2rem;
   }
 }
 
-/* Media Query for screens with a maximum width of 910px */
-@media (max-width: 910px) {
-  .Container-main .Container .Profile-Navigation {
-    left: 3.1rem
-  }
-  .Container-main .Container .User-details {
-    text-align: center;
-  }
-}
 /* Media Query for screens with a maximum width of 768px */
-@media (max-width: 788px) {
+@media screen and (max-width: 788px) {
   .Container {
     flex-direction: column;
     top: 15vh;
-    left: -1rem;
   }
 
   .Container-main .Container .Profile-Navigation {
@@ -246,7 +269,6 @@
 @media (max-width: 576px) {
   .Container {
     top: 4vh;
-    left: -3.8px;
   }
   .Container-main .Container .Profile-Navigation {
     display: none;

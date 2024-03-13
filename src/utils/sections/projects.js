@@ -8,10 +8,6 @@ import image4 from '../img/projects/course_finder/images4.png';
 import image5 from '../img/projects/course_finder/images5.png';
 import image6 from '../img/projects/course_finder/images6.png';
 import exploreHome from '../img/projects/explorer/home.png';
-import image_p from '../img/projects/protfolio/image.png';
-import image_p1 from '../img/projects/protfolio/image_1.png';
-import image_p2 from '../img/projects/protfolio/image_2.png';
-import image_p3 from '../img/projects/protfolio/image_3.png';
 
 export default function Projects () {
 
