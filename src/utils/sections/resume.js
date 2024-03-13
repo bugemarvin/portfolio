@@ -63,7 +63,7 @@ export default function Resume () {
         <div className='Resumes fCol'>
           <div className='fRow Resumes-header'>
             <img className='logos' src='https://cherryfield.com/wp-content/uploads/2020/12/cf-logo.jpg' />
-            <h1 className='Headers fRow'>Cherryfield Ltd | Epz Athi-River</h1>
+            <h1 className='Headers fRow'>Cherryfield Ltd</h1>
             <span>August, 2020 - June, 2023</span>
           </div>
           <h2 className='Headers fRow'>Position: Merchandiser<br />Type: Employment<br />Location: Kenya · Onsite</h2>
@@ -109,7 +109,7 @@ export default function Resume () {
             <li>- Recorded daily activities completed, data communications and remedial action.</li>
           </ul>
         </div>
-        <h1 className='Logo-form fRow'>Education</h1>
+        <h1 className='Headers fRow'><span className='Logo-form'>Education</span></h1>
         <div className='Resumes fCol'>
           <div className='fRow Resumes-header'>
             <img className='logos' src='https://d3t1rrq9fohtv1.cloudfront.net/media/thumbnails/images/alx-organisation-logo-20190916-00002391/f6313bbddaca8b63d28b26a7b02bc3c7.jpg' />
