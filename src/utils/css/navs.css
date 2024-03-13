@@ -27,7 +27,7 @@
                 position: absolute;
                 animation: slide-right .2s ease-in-out;
                 background-color: #ffffff;
-                width: 20%;
+                width: 30%;
                 top: 0;
                 left: 0;
                 height: 100vh;
@@ -134,14 +134,8 @@
         .NameClose span {
                 width: 3rem !important;
         }
+        .ContainerClose {
+                width: 50%;
+        }
 }
 
-@media screen and (max-width: 499px) {
-        .MenuItemsClose > li > a {
-                justify-content: center;
-        }
-        .Link_navs {
-                display: none;
-                content: '';
-        }
-}

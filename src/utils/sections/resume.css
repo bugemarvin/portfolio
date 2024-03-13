@@ -176,10 +176,6 @@
     z-index: none;
     font-weight: 600;
   }
-  .Resumes-header2  > span {
-    margin-top: -2rem;
-    margin-bottom: 1rem;
-  }
 }
 
 @media (max-width: 323px) {
