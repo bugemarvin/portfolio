@@ -12,17 +12,37 @@ export default function Resume () {
         <h1 className='Headers fRow'>Experince</h1>
         <div className='Resumes fCol'>
           <div className='fRow Resumes-header'>
+            <img className='logos' src={Modtechy} />
+            <h1 className='Headers fRow'>Modtechy</h1>
+            <span>April 2024 - Present</span>
+          </div>
+          <h2 className='Headers fRow'>Position: Frontend Developer<br />Location: Kenya · Hybrid|Remote</h2>
+          <ul className='Resumes-obj'>
+            <li>- Conducted extensive testing to ensure application responsiveness and reported performance weaknesses for resolution by the development team.</li>
+            <li>- Stayed updated on emerging technologies through periodicals, expert consultations, and conference attendance.</li>
+            <li>- Updated web pages and navigation tools to improve usability and align with client needs.</li>
+            <li>- Developed efficient and elegant websites using various programming languages.</li>
+            <li>- Enhanced user experience and functionality by optimizing JavaScript and CSS.</li>
+            <li>- Pursued continuous learning in web technologies and programming practices.</li>
+            <li>- Collaborated within cross-functional teams to refactor and optimize critical code modules.</li>
+            <li>- Maintained proficiency in programming languages, consistently delivering high-quality, object-oriented code.</li>
+            <li>- Employed industry-standard testing methods to troubleshoot and resolve application flaws.</li>
+          </ul>
+        </div>
+        <div className='Resumes fCol'>
+          <div className='fRow Resumes-header'>
             <img className='logos' src={Melian} />
             <h1 className='Headers fRow'>Melian Dialogue Research</h1>
-            <span>February, 2024 - To date</span>
+            <span>February, 2024 - May 2024</span>
           </div>
           <h2 className='Headers fRow'>Position: Full-stack Software Engineer <br />Type: Contract<br />Location: London, United Kingdom · Remote</h2>
           <ul className='Resumes-obj'>
-            <li>- Build Restful services and third-party APIs into legacy products and new solutions.</li>
-            <li>- Develop and implement solutions for User Interfaces.</li>
-            <li>- Produced code in programming languages to create the most effective and clean website.</li>
-            <li>- Liaised with corporate personnel regarding web development and technologies, providing recommendations, insight, and support as needed.</li>
-            <li>- Build Large language models for software solutions.</li>
+            <li>- Integrated Restful services and third-party APIs into legacy products and new solutions.</li>
+            <li>- Diagnosed and resolved technical issues, implementing effective solutions for optimal performance.</li>
+            <li>- Developed clean and efficient code across various programming languages.</li>
+            <li>- Provided insights and support to corporate personnel regarding web development and technologies.</li>
+            <li>- Applied Agile methodologies to prototype development in collaboration with senior engineers.</li>
+            <li>- Contributed to defining project scope and understanding the planning process with engineering teams.</li>
           </ul>
         </div>
         <div className='Resumes fCol'>
@@ -34,9 +54,9 @@ export default function Resume () {
           <h2 className='Headers fRow'>Position: Full-stack Software Engineer<br />Type: Internship<br />Location: United States · Remote</h2>
           <ul className='Resumes-obj'>
             <li>- Integrated Restful services and third-party APIs into legacy products and new solutions.</li>
-            <li>- Assessed technical issues, developing and implementing solutions for remediation.</li>
-            <li>- Produced code in programming languages to create the most effective and clean website.</li>
-            <li>- Liaised with corporate personnel regarding web development and technologies, providing recommendations, insight, and support as needed.</li>
+            <li>- Diagnosed and resolved technical issues, implementing effective solutions for optimal performance.</li>
+            <li>- Developed clean and efficient code across various programming languages.</li>
+            <li>- Provided insights and support to corporate personnel regarding web development and technologies.</li>
             <li>- Partnered with senior engineers to apply Agile development methodologies to prototype development tasks.</li>
             <li>- Worked with engineering teams to define project scope and understand the planning process.</li>
           </ul>

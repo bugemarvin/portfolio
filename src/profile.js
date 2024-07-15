@@ -8,7 +8,6 @@ import Projects from "./utils/sections/projects";
 import Contacts from "./utils/sections/contact";
 import CV from './utils/img/projects/Marvin_Kurland.pdf';
 import { FaHome, FaUserGraduate, FaProjectDiagram } from "react-icons/fa";
-import { BsInfoSquareFill } from "react-icons/bs";
 import { GiSkills } from "react-icons/gi";
 import { RiContactsFill } from "react-icons/ri";
 import { Link, animateScroll as scroll } from 'react-scroll';
