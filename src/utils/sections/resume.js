@@ -31,7 +31,7 @@ export default function Resume () {
             <img className='logos' src='https://d3t1rrq9fohtv1.cloudfront.net/media/thumbnails/images/alx-organisation-logo-20190916-00002391/f6313bbddaca8b63d28b26a7b02bc3c7.jpg'
             />
             <h1 className='Headers fRow'>Alx Africa | Nairobi</h1>
-            <span>March 2022 - May 2023</span>
+            <span>Mar 2022 - May 2023</span>
           </div>
           <h2 className='Headers fRow'>Type: Software Engineering</h2>
           <ul className='Resumes-obj'>
@@ -45,7 +45,7 @@ export default function Resume () {
           <div className='fRow Resumes-header'>
             <img className='logos' src='https://upload.wikimedia.org/wikipedia/commons/thumb/1/10/KCAU_logo.svg/1200px-KCAU_logo.svg.png' />
             <h1 className='Headers fRow'>KCA University | Nairobi</h1>
-            <span>March 2015 - August 2018</span>
+            <span>Mar 2015 - Aug 2018</span>
           </div>
           <h2 className='Headers fRow'>Type: Information Technology</h2>
           <ul className='Resumes-obj'>
