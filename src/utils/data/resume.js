@@ -40,7 +40,7 @@ export const Experince = [
   {
     'logo': Curiate,
     'company': 'Curiate Company',
-    'date': 'Apr 2024 - Present',
+    'date': 'Oct 2023 - Mar 2024',
     'position': 'Full Stack Software Engineer · Internship',
     'location': 'United States · Remote',
     'experience': [
