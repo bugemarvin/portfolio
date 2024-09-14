@@ -8,23 +8,28 @@ import {
   SiDjango,
   SiMysql,
   SiMongodb,
-  SiHtml5,
-  SiJquery,
+  SiDart,
   SiSass,
   SiGithub,
   SiGooglecloud,
   SiAmazonaws,
   SiAzuredevops,
   SiPostgresql,
-  SiPhp,
-  SiLaravel,
-  SiSpreadshirt,
+  SiTypescript,
   SiMailgun,
   SiPlangrid,
-  SiShopware
+  SiShopware,
+  SiReact,
+  SiNextdotjs,
+  SiTailwindcss,
+  SiChakraui,
+  SiFlutter,
+  SiGitlab,
 } from 'react-icons/si';
 import { DiNodejs } from 'react-icons/di';
+import { FaJava } from "react-icons/fa6";
 import { RiCodeBoxFill } from 'react-icons/ri';
+import { VscVscodeInsiders } from "react-icons/vsc";
 
 export default function Skills () {
   const [index, setIndex] = useState(0);
@@ -34,19 +39,23 @@ export default function Skills () {
   const skills = [
     [ // programming  languages
       <li><FaPython />Python</li>,
-      <li><RiCodeBoxFill />C</li>,
+      <li><SiDart />Dart</li>,
+      <li><SiTypescript />Typescript</li>,
       <li><SiJavascript />Javascript</li>,
+      <li><FaJava />Java</li>,
+      <li><RiCodeBoxFill />C</li>,
       <li><SiGnubash />Bash</li>,
-      <li><SiHtml5 />HTML/CSS3</li>,
-      <li><SiJquery />jQuery/AJAX</li>,
-      <li><SiSass />Sass/Scss</li>,
-      <li><SiPhp/>PHP</li>
     ],
     [// frameworks
       <li><SiFlask />Flask</li>,
       <li><SiDjango />Django</li>,
       <li><DiNodejs />Nodejs</li>,
-      <li><SiLaravel />Laravel</li>
+      <li><SiReact />Reactjs</li>,
+      <li><SiNextdotjs />Nextjs</li>,
+      <li><SiTailwindcss />Tailwindcss</li>,
+      <li><SiChakraui />Chakraui</li>,
+      <li><SiFlutter />Flutter</li>,
+      <li><SiSass />Sass/Scss</li>,
     ],
     [ // databases
       <li><SiMysql />MySQL</li>,
@@ -61,9 +70,9 @@ export default function Skills () {
     ],
     [// others
       <li><SiGithub />Git/GitHub</li>,
+      <li><SiGitlab />GitLab</li>,
       <li><FaTrademark />Merchandising</li>,
-      <li><SiSpreadshirt />Data-entry</li>,
-      <li><SiMailgun />Emailing</li>,
+      <li><VscVscodeInsiders />Vs Code</li>,
       <li><SiPlangrid />Production</li>,
       <li><SiShopware />Factory management</li>
     ]
