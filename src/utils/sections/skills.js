@@ -42,8 +42,8 @@ export default function Skills () {
       <li><SiDart />Dart</li>,
       <li><SiTypescript />Typescript</li>,
       <li><SiJavascript />Javascript</li>,
-      <li><FaJava />Java</li>,
-      <li><RiCodeBoxFill />C</li>,
+      // <li><FaJava />Java</li>,
+      // <li><RiCodeBoxFill />C</li>,
       <li><SiGnubash />Bash</li>,
     ],
     [// frameworks
