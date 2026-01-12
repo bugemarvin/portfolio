@@ -7,168 +7,143 @@ import {
   Image,
   List,
   ListItem,
-  Divider
+  Divider,
+  useColorModeValue
 } from '@chakra-ui/react';
-
+import { motion } from 'framer-motion';
 import { Experience } from '../data/resume';
 
+const MotionBox = motion(Box);
+
+const timelineVariants = {
+  hidden: { opacity: 0, y: 40 },
+  visible: { opacity: 1, y: 0 }
+};
+
 export default function Resume() {
+  const cardBg = useColorModeValue('white', 'gray.800');
+  const textMuted = useColorModeValue('gray.600', 'gray.400');
+  const lineColor = useColorModeValue('gray.300', 'gray.600');
+  const badgeBg = useColorModeValue('white', 'gray.700');
+
   return (
-    <Box
-      as="section"
-      id="resume"
-      maxW="1100px"
-      mx="auto"
-      px={{ base: 4, md: 8 }}
-      py={16}
-    >
-      {/* TITLE */}
-      <Heading mb={12} textAlign="center">
-        Resume
-      </Heading>
+    <Box as="section" id="resume" bg={useColorModeValue('gray.100', 'gray.900')} py={20}>
+      <Box maxW="1200px" mx="auto" px={{ base: 4, md: 10 }}>
+        <Heading textAlign="center" mb={14}>
+          Resume
+        </Heading>
 
-      <Stack spacing={12}>
-        {/* EXPERIENCE */}
-        <Box>
-          <Heading size="lg" mb={6}>
-            Experience
-          </Heading>
+        <Flex align="flex-start" gap={10}>
+          {/* Sticky heading */}
+          <Box
+            position="sticky"
+            top="120px"
+            minW="180px"
+            display={{ base: 'none', lg: 'block' }}
+          >
+            <Heading size="md">Experience</Heading>
+          </Box>
 
-          <Stack spacing={8}>
-            {Experience.map(exp => (
-              <Box
-                key={`${exp.company}-${exp.date}`}
-                p={6}
-                borderRadius="lg"
-                boxShadow="md"
-                bg="white"
-              >
-                {/* Header */}
-                <Flex
-                  justify="space-between"
-                  align="center"
-                  flexWrap="wrap"
-                  gap={4}
+          {/* Timeline */}
+          <Box position="relative" w="100%">
+            {/* Vertical Line */}
+            <Box
+              position="absolute"
+              left="24px"
+              top="0"
+              bottom="0"
+              w="2px"
+              bg={lineColor}
+            />
+
+            <Stack spacing={10}>
+              {Experience.map((exp, index) => (
+                <MotionBox
+                  key={`${exp.company}-${exp.date}`}
+                  initial="hidden"
+                  whileInView="visible"
+                  viewport={{ once: true, margin: '-100px' }}
+                  variants={timelineVariants}
+                  transition={{ duration: 0.5, delay: index * 0.05 }}
+                  position="relative"
+                  pl="80px"
                 >
-                  <Flex align="center" gap={4}>
+                  {/* Logo Badge */}
+                  <Box
+                    position="absolute"
+                    left="0"
+                    top="24px"
+                    w="48px"
+                    h="48px"
+                    bg={badgeBg}
+                    borderRadius="full"
+                    boxShadow="md"
+                    display="flex"
+                    alignItems="center"
+                    justifyContent="center"
+                  >
                     {exp.logo && (
                       <Image
                         src={exp.logo}
                         alt={`${exp.company} logo`}
-                        boxSize="80px"
+                        boxSize="28px"
                         objectFit="contain"
-                        display={{ base: 'none', md: 'block' }}
                       />
                     )}
+                  </Box>
 
-                    <Heading size="md">{exp.company}</Heading>
-                  </Flex>
+                  {/* Card */}
+                  <Box
+                    bg={cardBg}
+                    p={6}
+                    borderRadius="lg"
+                    boxShadow="md"
+                  >
+                    {/* Header */}
+                    <Flex justify="space-between" align="center" flexWrap="wrap" gap={4}>
+                      <Heading size="sm">{exp.company}</Heading>
+                      <Text fontSize="sm" color={textMuted}>
+                        {exp.date}
+                      </Text>
+                    </Flex>
 
-                  <Text fontSize="sm" fontWeight="semibold" color="gray.600">
-                    {exp.date}
-                  </Text>
-                </Flex>
+                    <Divider my={3} />
 
-                <Divider my={4} />
-
-                {/* Role */}
-                <Text fontSize="md" fontWeight="medium" mb={3}>
-                  {exp.position}
-                  {exp.location && (
-                    <Text as="span" color="gray.600">
-                      {' '}· {exp.location}
+                    {/* Role */}
+                    <Text fontSize="sm" color={textMuted} mb={3}>
+                      {exp.position} · {exp.location}
                     </Text>
-                  )}
-                </Text>
 
-                {/* Responsibilities */}
-                <List spacing={2} pl={4} styleType="disc">
-                  {exp.experience.map((item, index) => (
-                    <ListItem key={index} fontSize="sm">
-                      {item}
-                    </ListItem>
-                  ))}
-                </List>
-              </Box>
-            ))}
-          </Stack>
-        </Box>
+                    {/* Bullets */}
+                    <List spacing={2} pl={4} styleType="disc">
+                      {exp.experience.map((item, i) => (
+                        <ListItem key={i} fontSize="sm">
+                          {item}
+                        </ListItem>
+                      ))}
+                    </List>
+                  </Box>
+                </MotionBox>
+              ))}
+            </Stack>
+          </Box>
+        </Flex>
+      </Box>
 
-        {/* EDUCATION */}
-        <Box>
-          <Heading size="lg" mb={6}>
-            Education
-          </Heading>
-
-          <Stack spacing={8}>
-            {/* ALX */}
-            <Box p={6} borderRadius="lg" boxShadow="md" bg="white">
-              <Flex justify="space-between" align="center" flexWrap="wrap" gap={4}>
-                <Flex align="center" gap={4}>
-                  <Image
-                    src="https://d3t1rrq9fohtv1.cloudfront.net/media/thumbnails/images/alx-organisation-logo-20190916-00002391/f6313bbddaca8b63d28b26a7b02bc3c7.jpg"
-                    alt="ALX Africa logo"
-                    boxSize="80px"
-                    objectFit="contain"
-                    display={{ base: 'none', md: 'block' }}
-                  />
-                  <Heading size="md">ALX Africa · Nairobi</Heading>
-                </Flex>
-
-                <Text fontSize="sm" fontWeight="semibold" color="gray.600">
-                  Mar 2022 – May 2023
-                </Text>
-              </Flex>
-
-              <Divider my={4} />
-
-              <Text fontWeight="medium" mb={3}>
-                Software Engineering
-              </Text>
-
-              <List spacing={2} pl={4} styleType="disc">
-                <ListItem fontSize="sm">
-                  Full-stack Software Engineering program with a backend focus,
-                  emphasizing scalable systems, APIs, and real-world problem solving.
-                </ListItem>
-              </List>
-            </Box>
-
-            {/* KCA */}
-            <Box p={6} borderRadius="lg" boxShadow="md" bg="white">
-              <Flex justify="space-between" align="center" flexWrap="wrap" gap={4}>
-                <Flex align="center" gap={4}>
-                  <Image
-                    src="https://upload.wikimedia.org/wikipedia/commons/1/10/KCAU_logo.svg"
-                    alt="KCA University logo"
-                    boxSize="80px"
-                    objectFit="contain"
-                    display={{ base: 'none', md: 'block' }}
-                  />
-                  <Heading size="md">KCA University · Nairobi</Heading>
-                </Flex>
-
-                <Text fontSize="sm" fontWeight="semibold" color="gray.600">
-                  Mar 2015 – Aug 2018
-                </Text>
-              </Flex>
-
-              <Divider my={4} />
-
-              <Text fontWeight="medium" mb={3}>
-                Diploma in Information Technology
-              </Text>
-
-              <List spacing={2} pl={4} styleType="disc">
-                <ListItem fontSize="sm">
-                  Hands-on IT training covering software development, databases,
-                  networking, cybersecurity, systems analysis, and web technologies.
-                </ListItem>
-              </List>
-            </Box>
-          </Stack>
-        </Box>
-      </Stack>
-    </Box>
-  );
-}
+      {/* PRINT / PDF SUPPORT */}
+      <style>
+        {`
+          @media print {
+            body {
+              background: white !important;
+            }
+            #resume {
+              padding: 0 !important;
+            }
+            #resume * {
+              color: black !important;
+              box-shadow: none !important;
+            }
+          }
+        `}
+      </style>
