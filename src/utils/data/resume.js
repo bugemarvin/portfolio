@@ -114,5 +114,28 @@ export const Experience = [
       '• Maintained visual merchandising standards.',
       '• Managed inventory levels and product rotations.'
     ]
-  }
+  },
+  // EDUCATION
+  {
+    type: 'education',
+    logo: 'https://d3t1rrq9fohtv1.cloudfront.net/media/thumbnails/images/alx-organisation-logo-20190916-00002391/f6313bbddaca8b63d28b26a7b02bc3c7.jpg',
+    institution: 'ALX Africa',
+    location: 'Nairobi',
+    date: 'Mar 2022 – May 2023',
+    degree: 'Software Engineering',
+    details: [
+      'Full-stack Software Engineering program with a backend focus, emphasizing scalable systems, APIs, and real-world problem solving.'
+    ]
+  },
+  {
+    type: 'education',
+    logo: 'https://upload.wikimedia.org/wikipedia/commons/1/10/KCAU_logo.svg',
+    institution: 'KCA University',
+    location: 'Nairobi',
+    date: 'Mar 2015 – Aug 2018',
+    degree: 'Diploma in Information Technology',
+    details: [
+      'Hands-on IT training covering software development, databases, networking, cybersecurity, systems analysis, and web technologies.'
+    ]
+  },
 ];
