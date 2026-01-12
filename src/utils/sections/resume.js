@@ -64,7 +64,7 @@ export default function Resume() {
                 <MotionBox
                   key={`${exp.company}-${exp.date}`}
                   position="relative"
-                  pl={{ base: '72px', md: '120px' }} // extra padding for logo
+                  pl={{ base: '72px', md: '120px' }} // padding for timeline and logos
                   variants={itemVariants}
                   initial="hidden"
                   whileInView="visible"
@@ -74,7 +74,7 @@ export default function Resume() {
                   {/* Timeline Dot */}
                   <Box
                     position="absolute"
-                    left="48px" // slightly to the right of logo
+                    left="48px"
                     top="38px"
                     w="12px"
                     h="12px"
@@ -83,32 +83,22 @@ export default function Resume() {
                     zIndex={2}
                   />
 
-                  {/* Logo */}
-                  {exp.logo && (
-                    <Box
-                      position="absolute"
-                      left="0"
-                      top="16px"
-                      w="48px"
-                      h="48px"
-                      display="flex"
-                      alignItems="center"
-                      justifyContent="center"
-                    >
-                      <Image
-                        src={exp.logo}
-                        alt={`${exp.company} logo`}
-                        maxW="48px"
-                        maxH="48px"
-                        objectFit="contain"
-                      />
-                    </Box>
-                  )}
-
                   {/* Card */}
                   <Box bg={cardBg} p={6} borderRadius="lg" boxShadow="md">
+                    {/* Logo + Heading */}
                     <Flex justify="space-between" align="center" flexWrap="wrap">
-                      <Heading size="md">{exp.company}</Heading>
+                      <Flex align="center" gap={4}>
+                        {exp.logo && (
+                          <Image
+                            src={exp.logo}
+                            alt={`${exp.company} logo`}
+                            boxSize="48px"
+                            objectFit="contain"
+                          />
+                        )}
+                        <Heading size="md">{exp.company}</Heading>
+                      </Flex>
+
                       <Text fontSize="md" color={muted}>{exp.date}</Text>
                     </Flex>
 
@@ -120,7 +110,7 @@ export default function Resume() {
 
                     <List spacing={3} pl={5} styleType="disc">
                       {exp.experience.map((item, i) => (
-                        <ListItem key={i} fontSize={{ base: 'md', md: 'lg' }} fontWeight="300">
+                        <ListItem key={i} fontSize="lg" fontWeight="300">
                           {item}
                         </ListItem>
                       ))}
@@ -174,7 +164,7 @@ export default function Resume() {
 
                           <List spacing={3} pl={5} styleType="disc">
                             {edu.details.map((d, i) => (
-                              <ListItem key={i} fontSize={{ base: 'md', md: 'lg' }} fontWeight="300">
+                              <ListItem key={i} fontSize="lg" fontWeight="300">
                                 {d}
                               </ListItem>
                             ))}
