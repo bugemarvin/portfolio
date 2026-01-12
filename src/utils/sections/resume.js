@@ -64,7 +64,7 @@ export default function Resume() {
                 <MotionBox
                   key={`${exp.company}-${exp.date}`}
                   position="relative"
-                  pl={{ base: '72px', md: '120px' }} // padding for timeline and logos
+                  pl={{ base: '72px', md: '120px' }}
                   variants={itemVariants}
                   initial="hidden"
                   whileInView="visible"
@@ -110,7 +110,11 @@ export default function Resume() {
 
                     <List spacing={3} pl={5} styleType="disc">
                       {exp.experience.map((item, i) => (
-                        <ListItem key={i} fontSize="lg" fontWeight="300">
+                        <ListItem
+                          key={i}
+                          fontSize="1.6rem"
+                          fontWeight="300"
+                        >
                           {item}
                         </ListItem>
                       ))}
@@ -164,7 +168,11 @@ export default function Resume() {
 
                           <List spacing={3} pl={5} styleType="disc">
                             {edu.details.map((d, i) => (
-                              <ListItem key={i} fontSize="lg" fontWeight="300">
+                              <ListItem
+                                key={i}
+                                fontSize="1.6rem"
+                                fontWeight="300"
+                              >
                                 {d}
                               </ListItem>
                             ))}
