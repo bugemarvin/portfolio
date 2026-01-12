@@ -96,7 +96,13 @@ export default function Resume() {
                             objectFit="contain"
                           />
                         )}
-                        <Heading size="md">{exp.company}</Heading>
+                        <Text
+                          fontSize="2.4rem"
+                          fontWeight="700"
+                          color="#343a40"
+                        >
+                          {exp.company}
+                        </Text>
                       </Flex>
 
                       <Text fontSize="md" color={muted}>{exp.date}</Text>
@@ -155,7 +161,13 @@ export default function Resume() {
                                   objectFit="contain"
                                 />
                               )}
-                              <Heading size="md">{edu.institution} · {edu.location}</Heading>
+                              <Text
+                                fontSize="2.4rem"
+                                fontWeight="700"
+                                color="#343a40"
+                              >
+                                {edu.institution} · {edu.location}
+                              </Text>
                             </Flex>
                             <Text fontSize="md" color={muted}>{edu.date}</Text>
                           </Flex>
