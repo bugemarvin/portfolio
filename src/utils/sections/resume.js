@@ -25,18 +25,18 @@ export default function Resume() {
   const cardBg = useColorModeValue('white', 'gray.800');
   const muted = useColorModeValue('gray.600', 'gray.400');
   const lineColor = useColorModeValue('gray.300', 'gray.600');
-  const badgeBg = useColorModeValue('white', 'gray.700');
+
+  // Separate work and education
+  const workExperiences = Experience.filter(e => !e.type || e.type !== 'education');
+  const educationExperiences = Experience.filter(e => e.type === 'education');
 
   return (
     <Box as="section" id="resume" w="100%" bg={bg} py={20}>
-      {/* MAIN CONTAINER — wider like old CSS */}
       <Box maxW="1400px" mx="auto" px={{ base: 4, md: 12 }}>
-        <Heading textAlign="center" mb={16}>
-          Resume
-        </Heading>
+        <Heading textAlign="center" mb={16}>Resume</Heading>
 
         <Flex align="flex-start" gap={12}>
-          {/* STICKY SIDE TITLE */}
+          {/* Sticky Side Title */}
           <Box
             position="sticky"
             top="120px"
@@ -46,12 +46,12 @@ export default function Resume() {
             <Heading size="md">Experience</Heading>
           </Box>
 
-          {/* TIMELINE */}
+          {/* Timeline */}
           <Box position="relative" w="100%">
             {/* Vertical line */}
             <Box
               position="absolute"
-              left="20px"
+              left="60px"
               top="0"
               bottom="0"
               w="2px"
@@ -59,55 +59,57 @@ export default function Resume() {
             />
 
             <Stack spacing={12}>
-              {/* EXPERIENCE */}
-              {Experience.map((exp, index) => (
+              {/* WORK EXPERIENCE */}
+              {workExperiences.map((exp, index) => (
                 <MotionBox
                   key={`${exp.company}-${exp.date}`}
                   position="relative"
-                  pl={{ base: '48px', md: '72px' }}
+                  pl={{ base: '48px', md: '96px' }}
                   variants={itemVariants}
                   initial="hidden"
                   whileInView="visible"
                   viewport={{ once: true, margin: '-120px' }}
                   transition={{ duration: 0.45, delay: index * 0.08 }}
                 >
-                  {/* LOGO BADGE */}
+                  {/* Timeline Dot */}
                   <Box
                     position="absolute"
-                    left="0"
-                    top="28px"
-                    w="96px"
-                    h="48px"
-                    bg={badgeBg}
-                    borderRadius="md"
-                    boxShadow="md"
-                    display={{ base: 'none', md: 'flex' }}
-                    alignItems="center"
-                    justifyContent="center"
-                  >
-                    {exp.logo && (
+                    left="50px"
+                    top="38px"
+                    w="12px"
+                    h="12px"
+                    bg="blue.500"
+                    borderRadius="full"
+                    zIndex={2}
+                  />
+
+                  {/* Logo */}
+                  {exp.logo && (
+                    <Box
+                      position="absolute"
+                      left="0"
+                      top="16px"
+                      w="48px"
+                      h="48px"
+                      display="flex"
+                      alignItems="center"
+                      justifyContent="center"
+                    >
                       <Image
                         src={exp.logo}
                         alt={`${exp.company} logo`}
-                        maxW="80px"
-                        maxH="32px"
+                        maxW="48px"
+                        maxH="48px"
                         objectFit="contain"
                       />
-                    )}
-                  </Box>
+                    </Box>
+                  )}
 
-                  {/* CARD */}
-                  <Box
-                    bg={cardBg}
-                    p={6}
-                    borderRadius="lg"
-                    boxShadow="md"
-                  >
+                  {/* Card */}
+                  <Box bg={cardBg} p={6} borderRadius="lg" boxShadow="md">
                     <Flex justify="space-between" align="center" flexWrap="wrap">
                       <Heading size="md">{exp.company}</Heading>
-                      <Text fontSize="md" color={muted}>
-                        {exp.date}
-                      </Text>
+                      <Text fontSize="md" color={muted}>{exp.date}</Text>
                     </Flex>
 
                     <Divider my={4} />
@@ -118,109 +120,75 @@ export default function Resume() {
 
                     <List spacing={3} pl={5} styleType="disc">
                       {exp.experience.map((item, i) => (
-                        <ListItem
-                          key={i}
-                          fontSize={{ base: 'md', md: 'lg' }} // ≈ 1.6rem
-                          fontWeight="300"
-                        >
+                        <ListItem key={i} fontSize={{ base: 'md', md: 'lg' }} fontWeight="300">
                           {item}
                         </ListItem>
                       ))}
                     </List>
+
+                    {exp.metrics && (
+                      <Text mt={4} fontSize="sm" color="gray.500">
+                        Key Metrics: {exp.metrics.join(', ')}
+                      </Text>
+                    )}
                   </Box>
                 </MotionBox>
               ))}
 
               {/* EDUCATION */}
-              <Box pt={10}>
-                <Heading size="md" mb={8}>
-                  Education
-                </Heading>
+              {educationExperiences.length > 0 && (
+                <Box pt={10}>
+                  <Heading size="md" mb={8}>Education</Heading>
 
-                <Stack spacing={10}>
-                  {/* ALX */}
-                  <MotionBox
-                    variants={itemVariants}
-                    initial="hidden"
-                    whileInView="visible"
-                    viewport={{ once: true }}
-                    transition={{ duration: 0.4 }}
-                  >
-                    <Box bg={cardBg} p={6} borderRadius="lg" boxShadow="md">
-                      <Flex justify="space-between" align="center" flexWrap="wrap">
-                        <Heading size="md">ALX Africa · Nairobi</Heading>
-                        <Text fontSize="md" color={muted}>
-                          Mar 2022 – May 2023
-                        </Text>
-                      </Flex>
+                  <Stack spacing={10}>
+                    {educationExperiences.map((edu, idx) => (
+                      <MotionBox
+                        key={edu.institution}
+                        variants={itemVariants}
+                        initial="hidden"
+                        whileInView="visible"
+                        viewport={{ once: true }}
+                        transition={{ duration: 0.4, delay: idx * 0.08 }}
+                      >
+                        <Box bg={cardBg} p={6} borderRadius="lg" boxShadow="md">
+                          <Flex justify="space-between" align="center" flexWrap="wrap">
+                            <Flex align="center" gap={4}>
+                              {edu.logo && (
+                                <Image
+                                  src={edu.logo}
+                                  alt={`${edu.institution} logo`}
+                                  boxSize="48px"
+                                  objectFit="contain"
+                                />
+                              )}
+                              <Heading size="md">{edu.institution} · {edu.location}</Heading>
+                            </Flex>
+                            <Text fontSize="md" color={muted}>{edu.date}</Text>
+                          </Flex>
 
-                      <Divider my={4} />
+                          <Divider my={4} />
 
-                      <Text fontSize="md" color={muted} mb={3}>
-                        Software Engineering
-                      </Text>
+                          <Text fontSize="md" color={muted} mb={3}>
+                            {edu.degree}
+                          </Text>
 
-                      <List spacing={3} pl={5} styleType="disc">
-                        <ListItem fontSize={{ base: 'md', md: 'lg' }} fontWeight="300">
-                          Full-stack Software Engineering program with backend specialization,
-                          focusing on scalable systems, APIs, and real-world problem solving.
-                        </ListItem>
-                      </List>
-                    </Box>
-                  </MotionBox>
-
-                  {/* KCA */}
-                  <MotionBox
-                    variants={itemVariants}
-                    initial="hidden"
-                    whileInView="visible"
-                    viewport={{ once: true }}
-                    transition={{ duration: 0.4 }}
-                  >
-                    <Box bg={cardBg} p={6} borderRadius="lg" boxShadow="md">
-                      <Flex justify="space-between" align="center" flexWrap="wrap">
-                        <Heading size="md">KCA University · Nairobi</Heading>
-                        <Text fontSize="md" color={muted}>
-                          Mar 2015 – Aug 2018
-                        </Text>
-                      </Flex>
-
-                      <Divider my={4} />
-
-                      <Text fontSize="md" color={muted} mb={3}>
-                        Diploma in Information Technology
-                      </Text>
-
-                      <List spacing={3} pl={5} styleType="disc">
-                        <ListItem fontSize={{ base: 'md', md: 'lg' }} fontWeight="300">
-                          Comprehensive IT training in software development, databases,
-                          networking, cybersecurity, systems analysis, and web technologies.
-                        </ListItem>
-                      </List>
-                    </Box>
-                  </MotionBox>
-                </Stack>
-              </Box>
+                          <List spacing={3} pl={5} styleType="disc">
+                            {edu.details.map((d, i) => (
+                              <ListItem key={i} fontSize={{ base: 'md', md: 'lg' }} fontWeight="300">
+                                {d}
+                              </ListItem>
+                            ))}
+                          </List>
+                        </Box>
+                      </MotionBox>
+                    ))}
+                  </Stack>
+                </Box>
+              )}
             </Stack>
           </Box>
         </Flex>
       </Box>
-
-      {/* PRINT / PDF OPTIMIZATION */}
-      <style>
-        {`
-          @media print {
-            #resume {
-              background: white !important;
-              padding: 0 !important;
-            }
-            #resume * {
-              color: black !important;
-              box-shadow: none !important;
-            }
-          }
-        `}
-      </style>
     </Box>
   );
 }
