@@ -147,3 +147,6 @@ export default function Resume() {
           }
         `}
       </style>
+    </Box>
+  );
+}
