@@ -35,7 +35,8 @@ export default function Resume() {
       <Box maxW="1400px" mx="auto" px={{ base: 4, md: 12 }}>
         <Heading textAlign="center" mb={16}>Resume</Heading>
 
-        <Flex align="flex-start" gap={12}>
+        {/* WORK EXPERIENCE */}
+        <Flex align="flex-start" gap={12} mb={20}>
           {/* Sticky Side Title */}
           <Box
             position="sticky"
@@ -59,7 +60,6 @@ export default function Resume() {
             />
 
             <Stack spacing={12}>
-              {/* WORK EXPERIENCE */}
               {workExperiences.map((exp, index) => (
                 <MotionBox
                   key={`${exp.company}-${exp.date}`}
@@ -85,7 +85,6 @@ export default function Resume() {
 
                   {/* Card */}
                   <Box bg={cardBg} p={6} borderRadius="lg" boxShadow="md">
-                    {/* Logo + Heading */}
                     <Flex justify="space-between" align="center" flexWrap="wrap">
                       <Flex align="center" gap={4}>
                         {exp.logo && (
@@ -96,15 +95,10 @@ export default function Resume() {
                             objectFit="contain"
                           />
                         )}
-                        <Text
-                          fontSize="2.4rem"
-                          fontWeight="900"
-                          color="#343a40"
-                        >
+                        <Text fontSize="2.4rem" fontWeight="900" color="#343a40">
                           {exp.company}
                         </Text>
                       </Flex>
-
                       <Text fontSize="md" color={muted}>{exp.date}</Text>
                     </Flex>
 
@@ -116,11 +110,7 @@ export default function Resume() {
 
                     <List spacing={3} pl={5} styleType="disc">
                       {exp.experience.map((item, i) => (
-                        <ListItem
-                          key={i}
-                          fontSize="1.6rem"
-                          fontWeight="400"
-                        >
+                        <ListItem key={i} fontSize="1.6rem" fontWeight="400">
                           {item}
                         </ListItem>
                       ))}
@@ -134,70 +124,98 @@ export default function Resume() {
                   </Box>
                 </MotionBox>
               ))}
-
-              {/* EDUCATION */}
-              {educationExperiences.length > 0 && (
-                <Box pt={10}>
-                  <Heading size="md" mb={8}>Education</Heading>
-
-                  <Stack spacing={10}>
-                    {educationExperiences.map((edu, idx) => (
-                      <MotionBox
-                        key={edu.institution}
-                        variants={itemVariants}
-                        initial="hidden"
-                        whileInView="visible"
-                        viewport={{ once: true }}
-                        transition={{ duration: 0.4, delay: idx * 0.08 }}
-                      >
-                        <Box bg={cardBg} p={6} borderRadius="lg" boxShadow="md">
-                          <Flex justify="space-between" align="center" flexWrap="wrap">
-                            <Flex align="center" gap={4}>
-                              {edu.logo && (
-                                <Image
-                                  src={edu.logo}
-                                  alt={`${edu.institution} logo`}
-                                  boxSize="48px"
-                                  objectFit="contain"
-                                />
-                              )}
-                              <Text
-                                fontSize="2.4rem"
-                                fontWeight="900"
-                                color="#343a40"
-                              >
-                                {edu.institution} · {edu.location}
-                              </Text>
-                            </Flex>
-                            <Text fontSize="md" color={muted}>{edu.date}</Text>
-                          </Flex>
-
-                          <Divider my={4} />
-
-                          <Text fontSize="md" color={muted} mb={3}>
-                            {edu.degree}
-                          </Text>
-
-                          <List spacing={3} pl={5} styleType="disc">
-                            {edu.details.map((d, i) => (
-                              <ListItem
-                                key={i}
-                                fontSize="1.6rem"
-                                fontWeight="400"
-                              >
-                                {d}
-                              </ListItem>
-                            ))}
-                          </List>
-                        </Box>
-                      </MotionBox>
-                    ))}
-                  </Stack>
-                </Box>
-              )}
             </Stack>
           </Box>
         </Flex>
+
+        {/* EDUCATION */}
+        {educationExperiences.length > 0 && (
+          <Flex align="flex-start" gap={12}>
+            {/* Sticky Side Title */}
+            <Box
+              position="sticky"
+              top="120px"
+              minW="200px"
+              display={{ base: 'none', lg: 'block' }}
+            >
+              <Heading size="md" mb={8}>Education</Heading>
+            </Box>
+
+            {/* Education Timeline */}
+            <Box position="relative" w="100%">
+              {/* Vertical line for education */}
+              <Box
+                position="absolute"
+                left="60px"
+                top="0"
+                bottom="0"
+                w="2px"
+                bg={lineColor}
+              />
+
+              <Stack spacing={12}>
+                {educationExperiences.map((edu, idx) => (
+                  <MotionBox
+                    key={edu.institution}
+                    variants={itemVariants}
+                    initial="hidden"
+                    whileInView="visible"
+                    viewport={{ once: true }}
+                    transition={{ duration: 0.4, delay: idx * 0.08 }}
+                    pl={{ base: '72px', md: '120px' }}
+                    position="relative"
+                  >
+                    {/* Timeline Dot */}
+                    <Box
+                      position="absolute"
+                      left="48px"
+                      top="38px"
+                      w="12px"
+                      h="12px"
+                      bg="green.500"
+                      borderRadius="full"
+                      zIndex={2}
+                    />
+
+                    {/* Card */}
+                    <Box bg={cardBg} p={6} borderRadius="lg" boxShadow="md">
+                      <Flex justify="space-between" align="center" flexWrap="wrap">
+                        <Flex align="center" gap={4}>
+                          {edu.logo && (
+                            <Image
+                              src={edu.logo}
+                              alt={`${edu.institution} logo`}
+                              boxSize="48px"
+                              objectFit="contain"
+                            />
+                          )}
+                          <Text fontSize="2.4rem" fontWeight="900" color="#343a40">
+                            {edu.institution} · {edu.location}
+                          </Text>
+                        </Flex>
+                        <Text fontSize="md" color={muted}>{edu.date}</Text>
+                      </Flex>
+
+                      <Divider my={4} />
+
+                      <Text fontSize="md" color={muted} mb={3}>
+                        {edu.degree}
+                      </Text>
+
+                      <List spacing={3} pl={5} styleType="disc">
+                        {edu.details.map((d, i) => (
+                          <ListItem key={i} fontSize="1.6rem" fontWeight="400">
+                            {d}
+                          </ListItem>
+                        ))}
+                      </List>
+                    </Box>
+                  </MotionBox>
+                ))}
+              </Stack>
+            </Box>
+          </Flex>
+        )}
       </Box>
     </Box>
   );
