@@ -36,6 +36,7 @@ export default function Resume() {
           fontWeight="700"
           textAlign="center"
           mb={{ base: 12, md: 16 }}
+          color="#343a40"
         >
           Resume
         </Text>
@@ -49,7 +50,7 @@ export default function Resume() {
             mb={{ base: 8, lg: 0 }}
             display={{ base: 'none', lg: 'block' }}
           >
-            <Text fontSize={{ base: '1.5rem', md: '2xl' }} fontWeight="600">
+            <Text fontSize={{ base: '1.5rem', md: '2rem' }} fontWeight="600">
               Experience
             </Text>
           </Box>
@@ -59,7 +60,7 @@ export default function Resume() {
             {/* Vertical line */}
             <Box
               position="absolute"
-              left={{ base: '30px', md: '60px' }}
+              left={{ base: '20px', sm: '30px', md: '60px' }}
               top="0"
               bottom="0"
               w="2px"
@@ -72,7 +73,7 @@ export default function Resume() {
                 <MotionBox
                   key={`${exp.company}-${exp.date}`}
                   position="relative"
-                  pl={{ base: '60px', md: '120px' }}
+                  pl={{ base: '60px', sm: '72px', md: '120px' }}
                   variants={itemVariants}
                   initial="hidden"
                   whileInView="visible"
@@ -82,7 +83,7 @@ export default function Resume() {
                   {/* Timeline Dot */}
                   <Box
                     position="absolute"
-                    left={{ base: '20px', md: '48px' }}
+                    left={{ base: '8px', sm: '20px', md: '48px' }}
                     top="38px"
                     w="12px"
                     h="12px"
@@ -105,10 +106,10 @@ export default function Resume() {
                           <Image
                             src={exp.logo}
                             alt={`${exp.company} logo`}
-                            boxSize={{ base: '40px', md: '48px' }}
+                            boxSize={{ base: '32px', sm: '36px', md: '40px' }}
                             objectFit="contain"
                             borderRadius="12%"
-                            mr={{ base: 0, md: '-2rem' }}
+                            mr={{ base: 0, md: '0.5rem' }}
                             display={{ base: 'none', md: 'block' }}
                           />
                         )}
@@ -129,7 +130,7 @@ export default function Resume() {
                     <Divider my={{ base: 3, md: 4 }} />
 
                     <Text
-                      fontSize={{ base: '1rem', md: '1.2rem' }}
+                      fontSize={{ base: '1.4rem', md: '1.6rem' }}
                       color={muted}
                       mb={4}
                     >
@@ -149,7 +150,7 @@ export default function Resume() {
                     </List>
 
                     {exp.metrics && (
-                      <Text mt={4} fontSize="sm" color="gray.500">
+                      <Text mt={4} fontSize={{ base: '1.2rem', md: '1.4rem' }} color="gray.500">
                         Key Metrics: {exp.metrics.join(', ')}
                       </Text>
                     )}
@@ -160,7 +161,7 @@ export default function Resume() {
               {/* Education */}
               {educationExperiences.length > 0 && (
                 <Box pt={{ base: 8, md: 10 }}>
-                  <Text fontSize={{ base: '1.8rem', md: '2xl' }} fontWeight="600" mb={8}>
+                  <Text fontSize={{ base: '1.8rem', md: '2rem' }} fontWeight="600" mb={8}>
                     Education
                   </Text>
 
@@ -186,10 +187,10 @@ export default function Resume() {
                                 <Image
                                   src={edu.logo}
                                   alt={`${edu.institution} logo`}
-                                  boxSize={{ base: '40px', md: '48px' }}
+                                  boxSize={{ base: '32px', sm: '36px', md: '40px' }}
                                   objectFit="contain"
                                   borderRadius="12%"
-                                  mr={{ base: 0, md: '-2rem' }}
+                                  mr={{ base: 0, md: '0.5rem' }}
                                   display={{ base: 'none', md: 'block' }}
                                 />
                               )}
@@ -209,7 +210,7 @@ export default function Resume() {
                           <Divider my={{ base: 3, md: 4 }} />
 
                           <Text
-                            fontSize={{ base: '1rem', md: '1.2rem' }}
+                            fontSize={{ base: '1.4rem', md: '1.6rem' }}
                             color={muted}
                             mb={3}
                           >
