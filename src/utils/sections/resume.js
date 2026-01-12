@@ -64,7 +64,7 @@ export default function Resume() {
                 <MotionBox
                   key={`${exp.company}-${exp.date}`}
                   position="relative"
-                  pl={{ base: '48px', md: '96px' }}
+                  pl={{ base: '72px', md: '120px' }} // extra padding for logo
                   variants={itemVariants}
                   initial="hidden"
                   whileInView="visible"
@@ -74,7 +74,7 @@ export default function Resume() {
                   {/* Timeline Dot */}
                   <Box
                     position="absolute"
-                    left="50px"
+                    left="48px" // slightly to the right of logo
                     top="38px"
                     w="12px"
                     h="12px"
