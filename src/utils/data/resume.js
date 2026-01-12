@@ -5,7 +5,7 @@ import Devatop from '../img/logos/devatop_logo.png';
 import Akoto from '../img/logos/akoto_logo.png';
 import Freelance from '../img/logos/freelance_logo.png';
 
-export const Experince = [
+export const Experience = [
   {
     logo: Freelance,
     company: 'Freelance',
