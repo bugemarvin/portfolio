@@ -2,7 +2,6 @@ import {
   Box,
   Flex,
   Stack,
-  Heading,
   Text,
   Image,
   List,
@@ -26,24 +25,33 @@ export default function Resume() {
   const muted = useColorModeValue('gray.600', 'gray.400');
   const lineColor = useColorModeValue('gray.300', 'gray.600');
 
-  // Separate work and education
   const workExperiences = Experience.filter(e => !e.type || e.type !== 'education');
   const educationExperiences = Experience.filter(e => e.type === 'education');
 
   return (
-    <Box as="section" id="resume" w="100%" bg={bg} py={20}>
+    <Box as="section" id="resume" w="100%" bg={bg} py={{ base: 12, md: 20 }}>
       <Box maxW="1400px" mx="auto" px={{ base: 4, md: 12 }}>
-        <Heading textAlign="center" mb={16}>Resume</Heading>
+        <Text
+          fontSize={{ base: '2rem', md: '3rem' }}
+          fontWeight="700"
+          textAlign="center"
+          mb={{ base: 12, md: 16 }}
+        >
+          Resume
+        </Text>
 
-        <Flex align="flex-start" gap={12}>
+        <Flex direction={{ base: 'column', lg: 'row' }} align="flex-start" gap={12}>
           {/* Sticky Side Title */}
           <Box
-            position="sticky"
-            top="120px"
-            minW="200px"
+            position={{ base: 'relative', lg: 'sticky' }}
+            top={{ lg: '120px' }}
+            minW={{ lg: '200px' }}
+            mb={{ base: 8, lg: 0 }}
             display={{ base: 'none', lg: 'block' }}
           >
-            <Heading size="md">Experience</Heading>
+            <Text fontSize={{ base: '1.5rem', md: '2xl' }} fontWeight="600">
+              Experience
+            </Text>
           </Box>
 
           {/* Timeline */}
@@ -51,20 +59,20 @@ export default function Resume() {
             {/* Vertical line */}
             <Box
               position="absolute"
-              left="60px"
+              left={{ base: '30px', md: '60px' }}
               top="0"
               bottom="0"
               w="2px"
               bg={lineColor}
             />
 
-            <Stack spacing={12}>
-              {/* WORK EXPERIENCE */}
+            <Stack spacing={{ base: 8, md: 12 }}>
+              {/* Work Experience */}
               {workExperiences.map((exp, index) => (
                 <MotionBox
                   key={`${exp.company}-${exp.date}`}
                   position="relative"
-                  pl={{ base: '72px', md: '120px' }}
+                  pl={{ base: '60px', md: '120px' }}
                   variants={itemVariants}
                   initial="hidden"
                   whileInView="visible"
@@ -74,7 +82,7 @@ export default function Resume() {
                   {/* Timeline Dot */}
                   <Box
                     position="absolute"
-                    left="48px"
+                    left={{ base: '20px', md: '48px' }}
                     top="38px"
                     w="12px"
                     h="12px"
@@ -84,7 +92,12 @@ export default function Resume() {
                   />
 
                   {/* Card */}
-                  <Box bg={cardBg} p={6} borderRadius="lg" boxShadow="md">
+                  <Box
+                    bg={cardBg}
+                    p={{ base: 4, md: 6 }}
+                    borderRadius="lg"
+                    boxShadow="rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px"
+                  >
                     {/* Logo + Heading */}
                     <Flex justify="space-between" align="center" flexWrap="wrap">
                       <Flex align="center" gap={4}>
@@ -92,12 +105,15 @@ export default function Resume() {
                           <Image
                             src={exp.logo}
                             alt={`${exp.company} logo`}
-                            boxSize="48px"
+                            boxSize={{ base: '40px', md: '48px' }}
                             objectFit="contain"
+                            borderRadius="12%"
+                            mr={{ base: 0, md: '-2rem' }}
+                            display={{ base: 'none', md: 'block' }}
                           />
                         )}
                         <Text
-                          fontSize="2.4rem"
+                          fontSize={{ base: '1.8rem', md: '2.4rem' }}
                           fontWeight="700"
                           color="#343a40"
                         >
@@ -105,12 +121,18 @@ export default function Resume() {
                         </Text>
                       </Flex>
 
-                      <Text fontSize="md" color={muted}>{exp.date}</Text>
+                      <Text fontSize={{ base: '1rem', md: '1.2rem' }} color={muted}>
+                        {exp.date}
+                      </Text>
                     </Flex>
 
-                    <Divider my={4} />
+                    <Divider my={{ base: 3, md: 4 }} />
 
-                    <Text fontSize="md" color={muted} mb={4}>
+                    <Text
+                      fontSize={{ base: '1rem', md: '1.2rem' }}
+                      color={muted}
+                      mb={4}
+                    >
                       {exp.position} · {exp.location}
                     </Text>
 
@@ -118,7 +140,7 @@ export default function Resume() {
                       {exp.experience.map((item, i) => (
                         <ListItem
                           key={i}
-                          fontSize="1.6rem"
+                          fontSize={{ base: '1.4rem', md: '1.6rem' }}
                           fontWeight="300"
                         >
                           {item}
@@ -135,12 +157,14 @@ export default function Resume() {
                 </MotionBox>
               ))}
 
-              {/* EDUCATION */}
+              {/* Education */}
               {educationExperiences.length > 0 && (
-                <Box pt={10}>
-                  <Heading size="md" mb={8}>Education</Heading>
+                <Box pt={{ base: 8, md: 10 }}>
+                  <Text fontSize={{ base: '1.8rem', md: '2xl' }} fontWeight="600" mb={8}>
+                    Education
+                  </Text>
 
-                  <Stack spacing={10}>
+                  <Stack spacing={{ base: 6, md: 10 }}>
                     {educationExperiences.map((edu, idx) => (
                       <MotionBox
                         key={edu.institution}
@@ -150,31 +174,45 @@ export default function Resume() {
                         viewport={{ once: true }}
                         transition={{ duration: 0.4, delay: idx * 0.08 }}
                       >
-                        <Box bg={cardBg} p={6} borderRadius="lg" boxShadow="md">
+                        <Box
+                          bg={cardBg}
+                          p={{ base: 4, md: 6 }}
+                          borderRadius="lg"
+                          boxShadow="rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px"
+                        >
                           <Flex justify="space-between" align="center" flexWrap="wrap">
                             <Flex align="center" gap={4}>
                               {edu.logo && (
                                 <Image
                                   src={edu.logo}
                                   alt={`${edu.institution} logo`}
-                                  boxSize="48px"
+                                  boxSize={{ base: '40px', md: '48px' }}
                                   objectFit="contain"
+                                  borderRadius="12%"
+                                  mr={{ base: 0, md: '-2rem' }}
+                                  display={{ base: 'none', md: 'block' }}
                                 />
                               )}
                               <Text
-                                fontSize="2.4rem"
+                                fontSize={{ base: '1.8rem', md: '2.4rem' }}
                                 fontWeight="700"
                                 color="#343a40"
                               >
                                 {edu.institution} · {edu.location}
                               </Text>
                             </Flex>
-                            <Text fontSize="md" color={muted}>{edu.date}</Text>
+                            <Text fontSize={{ base: '1rem', md: '1.2rem' }} color={muted}>
+                              {edu.date}
+                            </Text>
                           </Flex>
 
-                          <Divider my={4} />
+                          <Divider my={{ base: 3, md: 4 }} />
 
-                          <Text fontSize="md" color={muted} mb={3}>
+                          <Text
+                            fontSize={{ base: '1rem', md: '1.2rem' }}
+                            color={muted}
+                            mb={3}
+                          >
                             {edu.degree}
                           </Text>
 
@@ -182,7 +220,7 @@ export default function Resume() {
                             {edu.details.map((d, i) => (
                               <ListItem
                                 key={i}
-                                fontSize="1.6rem"
+                                fontSize={{ base: '1.4rem', md: '1.6rem' }}
                                 fontWeight="300"
                               >
                                 {d}
