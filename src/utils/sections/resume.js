@@ -57,7 +57,6 @@ export default function Resume() {
 
           {/* Timeline */}
           <Box position="relative" w="100%">
-            {/* Vertical line */}
             <Box
               position="absolute"
               left={{ base: '20px', sm: '30px', md: '60px' }}
@@ -68,19 +67,17 @@ export default function Resume() {
             />
 
             <Stack spacing={{ base: 8, md: 12 }}>
-              {/* Work Experience */}
               {workExperiences.map((exp, index) => (
                 <MotionBox
                   key={`${exp.company}-${exp.date}`}
                   position="relative"
-                  pl={{ base: '60px', sm: '72px', md: '120px' }}
+                  pl={{ base: '72px', md: '120px' }}
                   variants={itemVariants}
                   initial="hidden"
                   whileInView="visible"
                   viewport={{ once: true, margin: '-120px' }}
                   transition={{ duration: 0.45, delay: index * 0.08 }}
                 >
-                  {/* Timeline Dot */}
                   <Box
                     position="absolute"
                     left={{ base: '8px', sm: '20px', md: '48px' }}
@@ -92,32 +89,23 @@ export default function Resume() {
                     zIndex={2}
                   />
 
-                  {/* Card */}
                   <Box
                     bg={cardBg}
                     p={{ base: 4, md: 6 }}
                     borderRadius="lg"
                     boxShadow="rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px"
                   >
-                    {/* Logo + Heading */}
                     <Flex justify="space-between" align="center" flexWrap="wrap">
                       <Flex align="center" gap={4}>
                         {exp.logo && (
                           <Image
                             src={exp.logo}
                             alt={`${exp.company} logo`}
-                            boxSize={{ base: '32px', sm: '36px', md: '40px' }}
+                            boxSize="48px"
                             objectFit="contain"
-                            borderRadius="12%"
-                            mr={{ base: 0, md: '0.5rem' }}
-                            display={{ base: 'none', md: 'block' }}
                           />
                         )}
-                        <Text
-                          fontSize={{ base: '1.8rem', md: '2.4rem' }}
-                          fontWeight="700"
-                          color="#343a40"
-                        >
+                        <Text fontSize="2.4rem" fontWeight="700" color="#343a40">
                           {exp.company}
                         </Text>
                       </Flex>
@@ -127,30 +115,22 @@ export default function Resume() {
                       </Text>
                     </Flex>
 
-                    <Divider my={{ base: 3, md: 4 }} />
+                    <Divider my={4} />
 
-                    <Text
-                      fontSize={{ base: '1.4rem', md: '1.6rem' }}
-                      color={muted}
-                      mb={4}
-                    >
+                    <Text fontSize="1.6rem" color={muted} mb={4}>
                       {exp.position} · {exp.location}
                     </Text>
 
                     <List spacing={3} pl={5} styleType="disc">
                       {exp.experience.map((item, i) => (
-                        <ListItem
-                          key={i}
-                          fontSize={{ base: '1.4rem', md: '1.6rem' }}
-                          fontWeight="300"
-                        >
+                        <ListItem key={i} fontSize="1.6rem" fontWeight="300">
                           {item}
                         </ListItem>
                       ))}
                     </List>
 
                     {exp.metrics && (
-                      <Text mt={4} fontSize={{ base: '1.2rem', md: '1.4rem' }} color="gray.500">
+                      <Text mt={4} fontSize="sm" color="gray.500">
                         Key Metrics: {exp.metrics.join(', ')}
                       </Text>
                     )}
@@ -158,7 +138,6 @@ export default function Resume() {
                 </MotionBox>
               ))}
 
-              {/* Education */}
               {educationExperiences.length > 0 && (
                 <Box pt={{ base: 8, md: 10 }}>
                   <Text fontSize={{ base: '1.8rem', md: '2rem' }} fontWeight="600" mb={8}>
@@ -187,18 +166,11 @@ export default function Resume() {
                                 <Image
                                   src={edu.logo}
                                   alt={`${edu.institution} logo`}
-                                  boxSize={{ base: '32px', sm: '36px', md: '40px' }}
+                                  boxSize="48px"
                                   objectFit="contain"
-                                  borderRadius="12%"
-                                  mr={{ base: 0, md: '0.5rem' }}
-                                  display={{ base: 'none', md: 'block' }}
                                 />
                               )}
-                              <Text
-                                fontSize={{ base: '1.8rem', md: '2.4rem' }}
-                                fontWeight="700"
-                                color="#343a40"
-                              >
+                              <Text fontSize="2.4rem" fontWeight="700" color="#343a40">
                                 {edu.institution} · {edu.location}
                               </Text>
                             </Flex>
@@ -207,23 +179,15 @@ export default function Resume() {
                             </Text>
                           </Flex>
 
-                          <Divider my={{ base: 3, md: 4 }} />
+                          <Divider my={4} />
 
-                          <Text
-                            fontSize={{ base: '1.4rem', md: '1.6rem' }}
-                            color={muted}
-                            mb={3}
-                          >
+                          <Text fontSize="1.6rem" color={muted} mb={3}>
                             {edu.degree}
                           </Text>
 
                           <List spacing={3} pl={5} styleType="disc">
                             {edu.details.map((d, i) => (
-                              <ListItem
-                                key={i}
-                                fontSize={{ base: '1.4rem', md: '1.6rem' }}
-                                fontWeight="300"
-                              >
+                              <ListItem key={i} fontSize="1.6rem" fontWeight="300">
                                 {d}
                               </ListItem>
                             ))}
