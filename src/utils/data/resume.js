@@ -1,87 +1,118 @@
 import Curiate from '../img/logos/curiateco_logo.jpeg';
 import Modtechy from '../img/logos/modtechy_limited_logo.jpeg';
 import Melian from '../img/logos/melian_dialogue_research_logo.jpeg';
-// 'https://cherryfield.com/wp-content/uploads/2020/12/cf-logo.jpg'
+import Devatop from '../img/logos/devatop_logo.png';
+import Akoto from '../img/logos/akoto_logo.png';
+import Freelance from '../img/logos/freelance_logo.png';
 
 export const Experince = [
   {
-    'logo': Modtechy,
-    'company': 'Modtechy',
-    'date': 'Apr 2024 - Present',
-    'position': 'Frontend Developer',
-    'location': 'Nairobi, Kenya · Hybrid',
-    'experience': [
-      '• Conducted extensive testing to ensure application responsiveness and reported performance weaknesses for resolution by the development team.',
-      '• Stayed updated on emerging technologies through periodicals, expert consultations, and conference attendance.',
-      '• Updated web pages and navigation tools to improve usability and align with client needs.',
-      '• Developed efficient and elegant websites using various programming languages.',
-      '• Enhanced user experience and functionality by optimizing JavaScript and CSS.',
-      '• Pursued continuous learning in web technologies and programming practices.',
-      '• Collaborated within cross-functional teams to refactor and optimize critical code modules.',
-      '• Maintained proficiency in programming languages, consistently delivering high-quality, object-oriented code.',
-      '• Employed industry-standard testing methods to troubleshoot and resolve application flaws.'
+    logo: Freelance,
+    company: 'Freelance',
+    date: 'Jun 2025 - Present',
+    position: 'Software Engineer',
+    location: 'Nairobi County, Kenya · Remote',
+    experience: [
+      '• Built and shipped web and mobile products for diverse clients.',
+      '• Delivered WordPress, custom frontend, and full-stack solutions.',
+      '• Worked across multiple technology stacks based on client requirements.',
+      '• Managed projects end-to-end from requirements to deployment.'
     ]
   },
   {
-    'logo': Melian,
-    'company': 'Melian Dialogue Research',
-    'date': 'Feb 2024 - Apr 2024',
-    'position': 'Full Stack Software Engineer',
-    'location': 'London Area, United Kingdom · Remote',
-    'experience': [
-      '• Integrated Restful services and third-party APIs into legacy products and new solutions.',
-      '• Diagnosed and resolved technical issues, implementing effective solutions for optimal performance.',
-      '• Developed clean and efficient code across various programming languages.',
-      '• Provided insights and support to corporate personnel regarding web development and technologies.',
-      '• Applied Agile methodologies to prototype development in collaboration with senior engineers.',
-      '• Contributed to defining project scope and understanding the planning process with engineering teams.'
+    logo: Akoto,
+    company: 'Akoto Group Limited',
+    date: 'Mar 2023 - Present',
+    position: 'Co-Founder & Software Engineer',
+    location: 'Kenya · Hybrid',
+    experience: [
+      '• Co-founded a software company delivering scalable and secure digital solutions.',
+      '• Provided technical leadership across full-stack development and system architecture.',
+      '• Led product strategy, engineering execution, and delivery quality.',
+      '• Designed API-driven, high-performance, and maintainable systems.',
+      '• Worked with cloud infrastructure, DevOps workflows, and CI/CD pipelines.',
+      '• Collaborated with stakeholders to translate business requirements into software.'
     ]
   },
   {
-    'logo': Curiate,
-    'company': 'Curiate Company',
-    'date': 'Oct 2023 - Mar 2024',
-    'position': 'Full Stack Software Engineer · Internship',
-    'location': 'United States · Remote',
-    'experience': [
-      '• Integrated Restful services and third-party APIs into legacy products and new solutions.',
-      '• Diagnosed and resolved technical issues, implementing effective solutions for optimal performance.',
-      '• Developed clean and efficient code across various programming languages.',
-      '• Provided insights and support to corporate personnel regarding web development and technologies.',
-      '• Applied Agile methodologies to prototype development in collaboration with senior engineers.',
-      '• Contributed to defining project scope and understanding the planning process with engineering teams.'
+    logo: Devatop,
+    company: 'Devatop Centre for Africa Development',
+    date: 'Nov 2024 - Jul 2025',
+    position: 'Frontend Developer',
+    location: 'Nigeria · Remote',
+    experience: [
+      '• Integrated frontend features using HTML, CSS, and modern JavaScript frameworks.',
+      '• Translated UI/UX mockups into responsive and accessible user interfaces.',
+      '• Maintained clean, reusable component structures for scalability.',
+      '• Conducted testing to ensure cross-browser compatibility and stability.'
     ]
   },
   {
-    'logo': 'https://cherryfield.com/wp-content/uploads/2020/12/cf-logo.jpg',
-    'company': 'CherryField',
-    'date': 'Aug 2020 - Sep 2023',
-    'position': 'Merchandiser',
-    'location': 'Nairobi, Kenya',
-    'experience': [
-      '• Managed end-to-end factory operations, including production analysis and data management.',
-      '• Facilitated transparent communication with buyers regarding production progress and shipment statuses.',
-      '• Oversaw raw material costing, ordering, and requisition creation for production items.',
-      '• Maintained a streamlined workflow to consistently meet and exceed production targets.',
-      '• Managed backorders to ensure timely fulfillment of customer requirements.',
-      '• Identified and resolved product issues in collaboration with supervisors or vendors.',
-      '• Ensured compliance with all company safety policies and guidelines.',
-      '• Skillfully operated material handling equipment to facilitate stock movement and organization.',
-      '• Conducted routine inventory counts and audits to ensure inventory accuracy.',
-      '• Leveraged adept navigation of the storage system to facilitate order fulfillment.'
+    logo: Modtechy,
+    company: 'Modtechy',
+    date: 'Apr 2024 - Oct 2024',
+    position: 'Frontend Developer',
+    location: 'Nairobi County, Kenya · Hybrid',
+    experience: [
+      '• Conducted extensive testing to ensure application responsiveness.',
+      '• Identified and reported performance bottlenecks for resolution.',
+      '• Updated web pages and navigation tools to improve usability.',
+      '• Optimized JavaScript and CSS to enhance performance and UX.',
+      '• Collaborated with cross-functional teams to refactor critical modules.',
+      '• Applied industry-standard testing methods to resolve application flaws.'
     ]
   },
   {
-    'logo': 'https://cherryfield.com/wp-content/uploads/2020/12/cf-logo.jpg',
-    'company': 'CherryField',
-    'date': ' Jun 2018 - Aug 2020',
-    'position': 'Merchandising Clerk',
-    'location': 'Nairobi, Kenya',
-    'experience': [
-      '• Conducted meticulous data entry and analysis to optimize fabric consumption in production processes.',
-      '• Proactively monitored key performance indicators (KPIs) and initiated actions to meet store goals.',
-      '• Maintained visual merchandising standards through regular updates and seasonal adjustments.',
-      '• Managed inventory levels and product rotations to ensure optimal store presentation and availability.'
+    logo: Melian,
+    company: 'Melian Dialogue Research',
+    date: 'Feb 2024 - Apr 2024',
+    position: 'Full Stack Software Engineer',
+    location: 'London Area, United Kingdom · Remote',
+    experience: [
+      '• Integrated backend services and third-party APIs.',
+      '• Resolved production issues under tight launch schedules.',
+      '• Developed clean and efficient code across multiple languages.',
+      '• Collaborated closely with senior engineers during rollout phases.'
+    ]
+  },
+  {
+    logo: Curiate,
+    company: 'Curiate Company',
+    date: 'Oct 2023 - Mar 2024',
+    position: 'Full Stack Software Engineer',
+    location: 'United States · Remote',
+    experience: [
+      '• Built scalable backend logic using JavaScript and SQL.',
+      '• Participated in Agile sprint-based delivery cycles.',
+      '• Led minor deployments and system improvements.',
+      '• Improved system stability and performance.'
+    ]
+  },
+  {
+    logo: 'https://cherryfield.com/wp-content/uploads/2020/12/cf-logo.jpg',
+    company: 'CherryField',
+    date: 'Aug 2020 - Sep 2023',
+    position: 'Merchandiser',
+    location: 'Nairobi, Kenya',
+    experience: [
+      '• Managed end-to-end factory operations and production data.',
+      '• Coordinated buyer communication on production and shipments.',
+      '• Oversaw raw material costing and requisitions.',
+      '• Managed backorders and ensured timely fulfillment.',
+      '• Conducted inventory audits and ensured compliance with safety policies.'
+    ]
+  },
+  {
+    logo: 'https://cherryfield.com/wp-content/uploads/2020/12/cf-logo.jpg',
+    company: 'CherryField',
+    date: 'Jun 2018 - Aug 2020',
+    position: 'Merchandising Clerk',
+    location: 'Nairobi, Kenya',
+    experience: [
+      '• Conducted data entry and analysis to optimize fabric consumption.',
+      '• Monitored KPIs and supported store performance goals.',
+      '• Maintained visual merchandising standards.',
+      '• Managed inventory levels and product rotations.'
     ]
   }
 ];
