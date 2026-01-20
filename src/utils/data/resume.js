@@ -6,19 +6,19 @@ import Akoto from '../img/logos/akoto_logo.png';
 import Freelance from '../img/logos/freelance_logo.png';
 
 export const Experience = [
-  {
-    logo: Freelance,
-    company: 'Freelance',
-    date: 'Jun 2025 - Present',
-    position: 'Software Engineer',
-    location: 'Nairobi County, Kenya · Remote',
-    experience: [
-      '• Built and shipped web and mobile products for diverse clients.',
-      '• Delivered WordPress, custom frontend, and full-stack solutions.',
-      '• Worked across multiple technology stacks based on client requirements.',
-      '• Managed projects end-to-end from requirements to deployment.'
-    ]
-  },
+  // {
+  //   logo: Freelance,
+  //   company: 'Freelance',
+  //   date: 'Jun 2025 - Present',
+  //   position: 'Software Engineer',
+  //   location: 'Nairobi County, Kenya · Remote',
+  //   experience: [
+  //     '• Built and shipped web and mobile products for diverse clients.',
+  //     '• Delivered WordPress, custom frontend, and full-stack solutions.',
+  //     '• Worked across multiple technology stacks based on client requirements.',
+  //     '• Managed projects end-to-end from requirements to deployment.'
+  //   ]
+  // },
   {
     logo: Akoto,
     company: 'Akoto Group Limited',
