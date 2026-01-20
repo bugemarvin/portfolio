@@ -1,0 +1,7 @@
+{
+  "name": "DevPort - Elite Developer Portfolio",
+  "description": "A high-performance, recruiter-optimized portfolio for modern software engineers, featuring AI-powered tools and seamless UX.",
+  "requestFramePermissions": [
+    "camera"
+  ]
+}
