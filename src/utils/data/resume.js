@@ -3,7 +3,7 @@ import Modtechy from '../img/logos/modtechy_limited_logo.jpeg';
 import Melian from '../img/logos/melian_dialogue_research_logo.jpeg';
 import Devatop from '../img/logos/devatop_logo.png';
 import Akoto from '../img/logos/akoto_logo.png';
-import Freelance from '../img/logos/freelance_logo.png';
+// import Freelance from '../img/logos/freelance_logo.png';
 
 export const Experience = [
   // {
