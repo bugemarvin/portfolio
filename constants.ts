@@ -1,8 +1,16 @@
 
 import { Project, Experience, BlogPost, Education } from './types';
+import Me from './assets/me.png';
+import WeDrop from './assets/wedrop.png';
+import Task from './assets/task.png';
+import Breathe from './assets/breathe.png';
+import Rose from './assets/rose.png';
+import Akoto from './assets/rose.png';
+import CourseFinder from './assets/course.png';
+import Dev from './assets/dev.png';
 
 // Centralized avatar for Marvin
-export const AVATAR_URL = "https://images.unsplash.com/photo-1540569014015-19a7be504e3a?q=80&w=2000&auto=format&fit=crop";
+export const AVATAR_URL = Me;
 
 export const PERSONAL_INFO = {
   name: "Marvin Kurland",
@@ -14,7 +22,7 @@ export const PERSONAL_INFO = {
   twitter: "https://twitter.com",
   medium: "https://medium.com/@bugemarvin",
   portfolio: "https://www.marvinkurland.dev",
-  summary: "Based in Nairobi, Kenya, I am a product-minded Software Engineer and Machine Learning enthusiast specializing in building scalable, API-driven systems. With a unique background spanning technical leadership as a Co-Founder to full-stack engineering in international environments (UK, US, Nigeria), I deliver high-performance solutions focused on clean architecture, automation, and advanced data-driven experiences using Machine Learning."
+  summary: "I am a product-minded Software Engineer and Machine Learning enthusiast specializing in building scalable, API-driven systems. With a unique background spanning technical leadership as a Co-Founder to full-stack engineering in international environments (UK, US, Nigeria), I deliver high-performance solutions focused on clean architecture, automation, and advanced data-driven experiences using Machine Learning."
 };
 
 export const SKILLS = {
@@ -34,7 +42,7 @@ export const PROJECTS: Project[] = [
     image: "https://images.unsplash.com/photo-1551434678-e076c223a692?q=80&w=2070&auto=format&fit=crop",
     featured: true,
     githubUrl: "#",
-    liveUrl: "#"
+    liveUrl: "https://akotogrouplimited.com"
   },
   {
     id: "4",
@@ -42,10 +50,10 @@ export const PROJECTS: Project[] = [
     description: "Advanced productivity management system with task lifecycle and progress tracking.",
     detailedDescription: "Built with Django and Python, featuring complex task prioritization, due date management, and status tracking. Designed a custom Tailwind UI for organizational efficiency and future-ready analytics.",
     tags: ["Django", "Python", "Tailwind CSS", "Productivity"],
-    image: "https://images.unsplash.com/photo-1484480974693-6ca0a78fb36b?q=80&w=2072&auto=format&fit=crop",
+    image: Task,
     featured: true,
     githubUrl: "#",
-    liveUrl: "#"
+    liveUrl: "https://taskhorizons.onrender.com"
   },
   {
     id: "6",
@@ -53,10 +61,10 @@ export const PROJECTS: Project[] = [
     description: "Modern beauty brand booking platform with a custom React frontend and Flask backend.",
     detailedDescription: "Engineered RESTful APIs using Flask to manage service listings and booking inquiries. Built a high-conversion React frontend optimized for mobile-first social media traffic and brand identity.",
     tags: ["Flask", "React", "REST API", "Booking"],
-    image: "https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9?q=80&w=2087&auto=format&fit=crop",
+    image: Rose,
     featured: true,
     githubUrl: "#",
-    liveUrl: "#"
+    liveUrl: "https://makeupbyrosekenya.com"
   },
   {
     id: "7",
@@ -64,10 +72,10 @@ export const PROJECTS: Project[] = [
     description: "Logistics and delivery management MVP for tracking orders and operational workflows.",
     detailedDescription: "Developed order creation and tracking APIs with Flask. Built a React-based operations dashboard with role-based access control (Admin/Ops) to handle logistics at scale.",
     tags: ["Flask", "React", "Logistics", "Dashboard"],
-    image: "https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?q=80&w=2070&auto=format&fit=crop",
+    image: WeDrop,
     featured: true,
     githubUrl: "#",
-    liveUrl: "#"
+    liveUrl: "https://wedroptech.com"
   },
   {
     id: "2",
@@ -75,9 +83,9 @@ export const PROJECTS: Project[] = [
     description: "A comprehensive MERN stack platform designed for seamless academic course discovery.",
     detailedDescription: "Developed using the MERN stack (MongoDB, Express, React, Node.js). Implemented complex search algorithms and a secure user enrollment system. Optimized for high performance and mobile-first accessibility.",
     tags: ["MERN", "React", "Node.js", "MongoDB", "Express"],
-    image: "https://images.unsplash.com/photo-1523240715639-963c6a02b66d?q=80&w=2070&auto=format&fit=crop",
+    image: CourseFinder,
     featured: true,
-    githubUrl: "https://github.com/bugemarvin",
+    githubUrl: "https://github.com/bugemarvin/CourseFinder",
     liveUrl: "https://medium.com/@bugemarvin/course-finder-7ad7ba9aea80"
   },
   {
@@ -97,7 +105,7 @@ export const PROJECTS: Project[] = [
     description: "Containerization and automation research project using Docker and GitHub Actions.",
     detailedDescription: "Built robust CI/CD pipelines using GitHub Actions, containerized services with Docker, and implemented Infrastructure as Code (IaC) principles for seamless deployment monitoring.",
     tags: ["Docker", "GitHub Actions", "CI/CD", "DevOps"],
-    image: "https://images.unsplash.com/photo-1667372333374-0d2d88582b15?q=80&w=2070&auto=format&fit=crop",
+    image: Dev,
     featured: false,
     githubUrl: "#",
     liveUrl: "#"

@@ -9,6 +9,8 @@ import { motion, AnimatePresence } from 'framer-motion';
 import { Link } from 'react-router-dom';
 import { PERSONAL_INFO, SKILLS, PROJECTS, EXPERIENCES, BLOG_POSTS, AVATAR_URL, EDUCATION } from '../constants';
 import { Project } from '../types';
+import emailjs from "emailjs-com";
+import emailjsConfig from "../services/emailjsConfig";
 
 const ProjectModal: React.FC<{ project: Project; onClose: () => void }> = ({ project, onClose }) => {
   useEffect(() => {
@@ -159,12 +161,41 @@ const Home: React.FC = () => {
   const [formState, setFormState] = useState<'idle' | 'loading' | 'success'>('idle');
   const [activeFilter, setActiveFilter] = useState<string>('All');
   const [selectedProject, setSelectedProject] = useState<Project | null>(null);
+  const [name, setName] = useState('');
+  const [email, setEmail] = useState('');
+  const [message, setMessage] = useState('');
+
 
   const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault();
-    setFormState('loading');
-    setTimeout(() => setFormState('success'), 1500);
-  };
+	  e.preventDefault();
+	  setFormState('loading');
+
+	  emailjs
+		.send(
+		  "default_service",
+		  emailjsConfig.templateId,
+		  {
+		    name,
+		    email,
+		    message,
+		  },
+		  emailjsConfig.userId,
+		)
+		.then(
+		  () => {
+		    setFormState('success');
+		    setName('');
+		    setEmail('');
+		    setMessage('');
+		  },
+		  (error) => {
+		    console.error('EmailJS Error:', error);
+		    setFormState('idle');
+		    alert('Failed to send message. Please try again.');
+		  }
+		);
+	};
+
 
   const { allTags, tagCounts } = useMemo(() => {
     const counts: Record<string, number> = { All: PROJECTS.length };
@@ -512,16 +543,16 @@ const Home: React.FC = () => {
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
                   <div className="space-y-3">
                     <label className="text-sm font-extrabold text-slate-700 dark:text-slate-300 ml-2 uppercase tracking-widest">Name</label>
-                    <input required type="text" placeholder="Jane Doe" className="w-full bg-slate-50 dark:bg-slate-950 border-2 border-slate-100 dark:border-slate-800 rounded-[1.5rem] px-8 py-5 focus:border-blue-500 outline-none transition-all font-medium" />
+                    <input required type="text" placeholder="Jane Doe" className="w-full bg-slate-50 dark:bg-slate-950 border-2 border-slate-100 dark:border-slate-800 rounded-[1.5rem] px-8 py-5 focus:border-blue-500 outline-none transition-all font-medium" value={name} onChange={(e) => setName(e.target.value)} />
                   </div>
                   <div className="space-y-3">
                     <label className="text-sm font-extrabold text-slate-700 dark:text-slate-300 ml-2 uppercase tracking-widest">Email</label>
-                    <input required type="email" placeholder="jane@global.com" className="w-full bg-slate-50 dark:bg-slate-950 border-2 border-slate-100 dark:border-slate-800 rounded-[1.5rem] px-8 py-5 focus:border-blue-500 outline-none transition-all font-medium" />
+                    <input required type="email" placeholder="jane@global.com" className="w-full bg-slate-50 dark:bg-slate-950 border-2 border-slate-100 dark:border-slate-800 rounded-[1.5rem] px-8 py-5 focus:border-blue-500 outline-none transition-all font-medium" value={email} onChange={(e) => setEmail(e.target.value)} />
                   </div>
                 </div>
                 <div className="space-y-3">
                   <label className="text-sm font-extrabold text-slate-700 dark:text-slate-300 ml-2 uppercase tracking-widest">Message</label>
-                  <textarea required rows={6} placeholder="How can we collaborate?" className="w-full bg-slate-50 dark:bg-slate-950 border-2 border-slate-100 dark:border-slate-800 rounded-[2rem] px-8 py-6 focus:border-blue-500 outline-none transition-all resize-none font-medium"></textarea>
+                  <textarea required rows={6} placeholder="How can we collaborate?" className="w-full bg-slate-50 dark:bg-slate-950 border-2 border-slate-100 dark:border-slate-800 rounded-[2rem] px-8 py-6 focus:border-blue-500 outline-none transition-all resize-none font-medium" value={message} onChange={(e) => setMessage(e.target.value)} ></textarea>
                 </div>
                 <button disabled={formState === 'loading'} type="submit" className="w-full py-6 bg-blue-600 hover:bg-blue-700 text-white rounded-[2rem] font-bold flex items-center justify-center space-x-4 shadow-2xl shadow-blue-500/40 transition-all active:scale-[0.98] disabled:opacity-70 text-lg">
                   {formState === 'loading' ? <Loader2 size={28} className="animate-spin" /> : <><span>Transmit Message</span> <Send size={24} /></>}
