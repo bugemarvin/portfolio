@@ -115,6 +115,33 @@ export const PROJECTS: Project[] = [
 export const EXPERIENCES: Experience[] = [
   {
     id: "exp1",
+    role: "CTO | Lead Software Engineer",
+    company: "FinishLab",
+    location: "Remote",
+    period: "January 2026 - Present",
+    description: [
+      "Partner and technical leader responsible for defining the engineering vision and architecture of FinishLab, a developer-focused SaaS platform.",
+      "Architected and developed the core platform using React, TypeScript, and Vite, focusing on scalable UI systems and high-performance frontend architecture.",
+      "Designed backend integrations and automation workflows supporting AI-powered developer diagnostics and productivity tooling.",
+      "Implemented CI/CD pipelines, containerized deployments, and modern DevOps practices to support rapid and reliable releases.",
+      "Collaborated with product and growth teams to translate platform capabilities into user-facing features and developer-focused solutions.",
+      "Led system design decisions, ensuring maintainable codebases, performance optimization, and scalable infrastructure."
+    ],
+    skills: [
+      "Technical Leadership",
+      "Startup Engineering",
+      "System Architecture",
+      "React",
+      "TypeScript",
+      "SaaS Platforms",
+      "DevOps",
+      "CI/CD",
+      "Automation",
+      "Cloud Infrastructure"
+    ]
+  },
+  {
+    id: "exp2",
     role: "Co-Founder | Lead Software Engineer | Machine Learning Engineer",
     company: "Akoto Group Limited",
     location: "Kenya · Hybrid",
