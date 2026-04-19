@@ -151,7 +151,7 @@ export const EXPERIENCES: Experience[] = [
       "Provided technical leadership across full-stack development, system architecture, and product strategy to ensure delivery of high-performance products.",
       "Integrated Machine Learning models to optimize business processes and enhance user experiences for client platforms.",
       "Designed and implemented API-driven, maintainable systems with robust Redis caching and SQL optimization.",
-      "Managed end-to-end project lifecycles—from requirements gathering to cloud deployment—using automated CI/CD pipelines.",
+      "Managed end-to-end project lifecycles, from requirements gathering to cloud deployment, using automated CI/CD pipelines.",
       "Delivered diverse technical solutions spanning modern React frontends, Node.js backends, and cross-platform mobile engines."
     ],
     skills: ["Technical Leadership", "Machine Learning", "System Architecture", "Full-Stack", "Cloud Infrastructure", "DevOps", "Redis", "API Design", "Client Management"]
