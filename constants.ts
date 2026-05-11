@@ -12,6 +12,19 @@ import Dev from './assets/dev.png';
 // Centralized avatar for Marvin
 export const AVATAR_URL = Me;
 
+export const PERSONAL_INFO = {
+  name: "Marvin Kurland",
+  role: "Software Engineer / Full-Stack Developer",
+  location: "Nairobi, Kenya · Remote Friendly",
+  email: "bugemarvin@outlook.com",
+  github: "https://github.com/bugemarvin",
+  linkedin: "https://www.linkedin.com/in/marvin-kurland-29b799133",
+  twitter: "https://twitter.com",
+  medium: "https://medium.com/@bugemarvin",
+  portfolio: "https://www.marvinkurland.dev",
+  summary: "I am a product-minded Software Engineer and Machine Learning enthusiast specializing in building scalable, API-driven systems. With a unique background spanning technical leadership as a Co-Founder to full-stack engineering in international environments (UK, US, Nigeria), I deliver high-performance solutions focused on clean architecture, automation, and advanced data-driven experiences using Machine Learning."
+};
+
 export const SKILLS = {
   frontend: [
     "React",
