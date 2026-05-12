@@ -223,7 +223,43 @@ export const EXPERIENCES: Experience[] = [
       "HTML5",
       "CSS3"
     ]
-  }
+  },
+  {
+  id: "exp6",
+  role: "Merchandiser",
+  company: "CherryField",
+  location: "Nairobi, Kenya",
+  period: "Aug 2020 - Sept 2023",
+  description: [
+    "Managed production operations, inventory coordination, and shipment tracking.",
+    "Worked with operational data, reporting, and process coordination across teams.",
+    "Developed strong organizational, communication, and workflow management skills in fast-paced environments."
+  ],
+  skills: [
+    "Operations",
+    "Inventory Management",
+    "Coordination",
+    "Reporting"
+  ]
+},
+{
+  id: "exp7",
+  role: "Merchandising Clerk",
+  company: "CherryField",
+  location: "Nairobi, Kenya",
+  period: "June 2018 - Aug 2020",
+  description: [
+    "Handled inventory records, reporting, and operational documentation.",
+    "Supported production tracking and internal coordination processes.",
+    "Maintained data accuracy and assisted with workflow optimization."
+  ],
+  skills: [
+    "Data Entry",
+    "Reporting",
+    "Coordination",
+    "Operations"
+  ]
+}
 ];
 
 export const EDUCATION: Education[] = [
