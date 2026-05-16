@@ -1,13 +1,9 @@
-
 import { Project, Experience, BlogPost, Education } from './types';
 import Me from './assets/me.png';
 import WeDrop from './assets/wedrop.png';
 import Task from './assets/task.png';
-import Breathe from './assets/breathe.png';
 import Rose from './assets/rose.png';
-import Akoto from './assets/rose.png';
 import CourseFinder from './assets/course.png';
-import Dev from './assets/dev.png';
 
 // Centralized avatar for Marvin
 export const AVATAR_URL = Me;
@@ -19,7 +15,7 @@ export const PERSONAL_INFO = {
   email: "bugemarvin@outlook.com",
   github: "https://github.com/bugemarvin",
   linkedin: "https://www.linkedin.com/in/marvin-kurland-29b799133",
-  twitter: "https://twitter.com",
+  twitter: "https://twitter.com/bugemarvin", // TODO: replace with actual handle
   medium: "https://medium.com/@bugemarvin",
   portfolio: "https://www.marvinkurland.dev",
   summary: "I am a product-minded Software Engineer and Machine Learning enthusiast specializing in building scalable, API-driven systems. With a unique background spanning technical leadership as a Co-Founder to full-stack engineering in international environments (UK, US, Nigeria), I deliver high-performance solutions focused on clean architecture, automation, and advanced data-driven experiences using Machine Learning."
@@ -68,6 +64,7 @@ export const PROJECTS: Project[] = [
     detailedDescription:
       "Designed and implemented scalable web platforms using React, Laravel, Node.js, and PostgreSQL. Developed API-driven systems, authentication flows, and optimized Redis caching layers to improve system performance and reliability.",
     tags: ["React", "Laravel", "PHP", "Redis", "PostgreSQL"],
+    // TODO: replace with a local asset (e.g. import Akoto from './assets/akoto.png')
     image:
       "https://images.unsplash.com/photo-1551434678-e076c223a692?q=80&w=2070&auto=format&fit=crop",
     featured: true,
@@ -124,8 +121,8 @@ export const PROJECTS: Project[] = [
     image: CourseFinder,
     featured: true,
     githubUrl: "https://github.com/bugemarvin/CourseFinder",
-    liveUrl:
-      "https://medium.com/@bugemarvin/course-finder-7ad7ba9aea80"
+    // Note: liveUrl points to a write-up article, not a running demo
+    liveUrl: "https://medium.com/@bugemarvin/course-finder-7ad7ba9aea80"
   }
 ];
 
@@ -225,41 +222,41 @@ export const EXPERIENCES: Experience[] = [
     ]
   },
   {
-  id: "exp6",
-  role: "Merchandiser",
-  company: "CherryField",
-  location: "Nairobi, Kenya",
-  period: "Aug 2020 - Sept 2023",
-  description: [
-    "Managed production operations, inventory coordination, and shipment tracking.",
-    "Worked with operational data, reporting, and process coordination across teams.",
-    "Developed strong organizational, communication, and workflow management skills in fast-paced environments."
-  ],
-  skills: [
-    "Operations",
-    "Inventory Management",
-    "Coordination",
-    "Reporting"
-  ]
-},
-{
-  id: "exp7",
-  role: "Merchandising Clerk",
-  company: "CherryField",
-  location: "Nairobi, Kenya",
-  period: "June 2018 - Aug 2020",
-  description: [
-    "Handled inventory records, reporting, and operational documentation.",
-    "Supported production tracking and internal coordination processes.",
-    "Maintained data accuracy and assisted with workflow optimization."
-  ],
-  skills: [
-    "Data Entry",
-    "Reporting",
-    "Coordination",
-    "Operations"
-  ]
-}
+    id: "exp5", // fixed: was exp6 (skipped exp5)
+    role: "Merchandiser",
+    company: "CherryField",
+    location: "Nairobi, Kenya",
+    period: "Aug 2020 - Sept 2023",
+    description: [
+      "Managed production operations, inventory coordination, and shipment tracking.",
+      "Worked with operational data, reporting, and process coordination across teams.",
+      "Developed strong organizational, communication, and workflow management skills in fast-paced environments."
+    ],
+    skills: [
+      "Operations",
+      "Inventory Management",
+      "Coordination",
+      "Reporting"
+    ]
+  },
+  {
+    id: "exp6", // fixed: was exp7
+    role: "Merchandising Clerk",
+    company: "CherryField",
+    location: "Nairobi, Kenya",
+    period: "June 2018 - Aug 2020",
+    description: [
+      "Handled inventory records, reporting, and operational documentation.",
+      "Supported production tracking and internal coordination processes.",
+      "Maintained data accuracy and assisted with workflow optimization."
+    ],
+    skills: [
+      "Data Entry",
+      "Reporting",
+      "Coordination",
+      "Operations"
+    ]
+  }
 ];
 
 export const EDUCATION: Education[] = [
