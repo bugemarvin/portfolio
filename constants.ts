@@ -134,127 +134,179 @@ export const EXPERIENCES: Experience[] = [
     location: "Remote",
     period: "January 2026 - Present",
     description: [
-      "Partner and technical leader responsible for defining the engineering vision and architecture of FinishLab.",
-      "Architected and developed scalable frontend systems using React, TypeScript, and Vite.",
-      "Designed reusable UI components and optimized frontend rendering performance.",
-      "Implemented CI/CD pipelines and containerized deployment environments.",
-      "Led system architecture decisions focused on maintainability, scalability, and performance."
+      "Partner and technical leader responsible for defining the engineering vision and architecture of FinishLab, a developer-focused SaaS platform.",
+      "Architected and developed the core platform using React, TypeScript, and Vite, focusing on scalable UI systems and high-performance frontend architecture.",
+      "Designed backend integrations and automation workflows supporting AI-powered developer diagnostics and productivity tooling.",
+      "Implemented CI/CD pipelines, containerized deployments, and modern DevOps practices for rapid and reliable releases.",
+      "Collaborated with product and growth teams to translate platform capabilities into developer-focused features.",
+      "Led system architecture decisions ensuring maintainable codebases, scalable infrastructure, and performance optimization."
     ],
     skills: [
       "React",
       "TypeScript",
-      "Frontend Architecture",
+      "Vite",
+      "System Architecture",
       "CI/CD",
       "Docker",
+      "DevOps",
       "Cloud Infrastructure"
     ]
   },
+
   {
     id: "exp2",
-    role: "Co-Founder | Lead Software Engineer",
+    role: "Co-Founder | Lead Software Engineer | Machine Learning Engineer",
     company: "Akoto Group Limited",
     location: "Kenya · Hybrid",
     period: "March 2023 - Present",
     description: [
-      "Co-founded a software company delivering scalable digital products for local and international clients.",
-      "Built and maintained frontend applications using React and Tailwind CSS.",
-      "Developed backend systems and REST APIs using Laravel, PHP, Node.js, and Django.",
-      "Integrated authentication systems, role-based access control, and secure API communication.",
-      "Designed API-driven architectures with Redis caching and SQL optimization.",
-      "Managed full software development lifecycles from planning to deployment.",
-      "Implemented CI/CD pipelines and deployment automation workflows."
+      "Co-founded a software company delivering scalable and secure digital solutions.",
+      "Provided technical leadership across full-stack development and system architecture.",
+      "Directed product strategy, engineering execution, and delivery quality.",
+      "Designed API-driven, high-performance, and maintainable software systems.",
+      "Built cloud-native solutions supported by DevOps practices and CI/CD pipelines.",
+      "Collaborated with stakeholders to translate business requirements into production-ready software.",
+      "Focused on clean architecture, automation, and performance optimization while mentoring engineering teams."
     ],
     skills: [
-      "React",
-      "Laravel",
-      "PHP",
-      "Node.js",
-      "Django",
+      "Full-Stack Development",
+      "Machine Learning",
+      "System Architecture",
+      "Cloud Infrastructure",
+      "DevOps",
+      "CI/CD",
+      "REST APIs",
       "Redis",
-      "PostgreSQL",
-      "Tailwind CSS",
-      "Docker"
+      "PostgreSQL"
     ]
   },
+
   {
     id: "exp3",
     role: "Frontend Developer",
     company: "Devatop Centre for Africa Development",
     location: "Nigeria · Remote",
-    period: "Nov 2024 - July 2025",
+    period: "November 2024 - July 2025",
     description: [
-      "Integrated frontend features using HTML, CSS, and React.",
-      "Translated UI/UX mockups into responsive and accessible interfaces.",
-      "Maintained reusable frontend component structures.",
-      "Conducted testing to ensure cross-browser compatibility and responsiveness."
+      "Integrated frontend features using HTML, CSS, and modern JavaScript frameworks to improve usability.",
+      "Collaborated with designers to translate UI mockups into responsive user interfaces.",
+      "Maintained reusable component structures and scalable frontend architecture.",
+      "Conducted regular testing to ensure cross-browser compatibility and prevent regressions."
     ],
     skills: [
-      "React",
       "JavaScript",
-      "HTML/CSS",
+      "HTML",
+      "CSS",
       "Responsive Design",
+      "Frontend Development",
       "UI/UX"
     ]
   },
+
   {
     id: "exp4",
     role: "Frontend Developer",
     company: "Modtechy",
-    location: "Nairobi County, Kenya · Hybrid",
-    period: "April 2024 - Oct 2024",
+    location: "Nairobi County, Kenya",
+    period: "April 2024 - October 2024",
     description: [
-      "Developed responsive web interfaces using React, JavaScript, Tailwind CSS, and Laravel Blade templates.",
-      "Collaborated with backend developers to integrate Laravel APIs and frontend features.",
-      "Improved usability through UI optimization and frontend refactoring.",
-      "Conducted testing to ensure responsiveness and cross-browser compatibility.",
-      "Optimized JavaScript and CSS performance for improved user experience.",
-      "Assisted in maintaining Laravel-based backend modules and resolving frontend integration issues.",
-      "Participated in debugging, testing, and deployment workflows."
+      "Conducted extensive testing to ensure application responsiveness and identify performance issues.",
+      "Updated web pages and navigation systems to improve usability and meet client requirements.",
+      "Enhanced user experience by optimizing JavaScript and CSS performance.",
+      "Collaborated with cross-functional teams to refactor and optimize critical application modules.",
+      "Maintained high-quality object-oriented code while continuously adopting modern web technologies.",
+      "Troubleshot and resolved application issues using industry-standard testing methodologies."
     ],
     skills: [
-      "React",
-      "Laravel",
-      "PHP",
       "JavaScript",
-      "Tailwind CSS",
       "HTML5",
-      "CSS3"
+      "CSS3",
+      "Testing",
+      "Performance Optimization",
+      "Frontend Development"
     ]
   },
+
   {
-    id: "exp5", // fixed: was exp6 (skipped exp5)
+    id: "exp5",
+    role: "Full Stack Software Engineer",
+    company: "Melian Dialogue Research",
+    location: "London Area, United Kingdom",
+    period: "February 2024 - April 2024",
+    description: [
+      "Integrated backend services and third-party APIs within complex software environments.",
+      "Resolved production issues under tight launch schedules.",
+      "Developed clean, maintainable code across multiple programming languages.",
+      "Collaborated closely with senior engineers during rollout and deployment phases."
+    ],
+    skills: [
+      "Full-Stack Development",
+      "REST APIs",
+      "Backend Development",
+      "Problem Solving",
+      "Deployment"
+    ]
+  },
+
+  {
+    id: "exp6",
+    role: "Full Stack Software Engineer",
+    company: "Curiate Company",
+    location: "United States · Remote",
+    period: "October 2023 - March 2024",
+    description: [
+      "Built scalable backend logic using JavaScript and SQL.",
+      "Led deployment activities and system improvements.",
+      "Participated in Agile sprint planning and milestone-driven software delivery."
+    ],
+    skills: [
+      "JavaScript",
+      "SQL",
+      "Backend Development",
+      "Agile",
+      "Deployment"
+    ]
+  },
+
+  {
+    id: "exp7",
     role: "Merchandiser",
     company: "CherryField",
     location: "Nairobi, Kenya",
-    period: "Aug 2020 - Sept 2023",
+    period: "August 2020 - September 2023",
     description: [
-      "Managed production operations, inventory coordination, and shipment tracking.",
-      "Worked with operational data, reporting, and process coordination across teams.",
-      "Developed strong organizational, communication, and workflow management skills in fast-paced environments."
+      "Managed end-to-end factory operations, including production analysis and data management.",
+      "Communicated production progress and shipment status with buyers.",
+      "Oversaw raw material costing, ordering, and requisition processes.",
+      "Maintained production workflows to consistently achieve manufacturing targets.",
+      "Managed inventory, stock movement, audits, and backorders while ensuring compliance with safety standards."
     ],
     skills: [
       "Operations",
+      "Production Management",
       "Inventory Management",
-      "Coordination",
+      "Supply Chain",
       "Reporting"
     ]
   },
+
   {
-    id: "exp6", // fixed: was exp7
+    id: "exp8",
     role: "Merchandising Clerk",
     company: "CherryField",
     location: "Nairobi, Kenya",
-    period: "June 2018 - Aug 2020",
+    period: "June 2018 - August 2020",
     description: [
-      "Handled inventory records, reporting, and operational documentation.",
-      "Supported production tracking and internal coordination processes.",
-      "Maintained data accuracy and assisted with workflow optimization."
+      "Performed data entry and production analysis to optimize fabric consumption.",
+      "Monitored KPIs and supported operational improvements.",
+      "Maintained visual merchandising standards and seasonal product displays.",
+      "Managed inventory levels and product rotation to maximize availability and presentation."
     ],
     skills: [
-      "Data Entry",
+      "Data Analysis",
+      "Inventory Management",
       "Reporting",
-      "Coordination",
-      "Operations"
+      "Visual Merchandising"
     ]
   }
 ];
