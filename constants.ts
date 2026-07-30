@@ -14,10 +14,10 @@ export const PERSONAL_INFO = {
   location: "Nairobi, Kenya · Remote Friendly",
   email: "bugemarvin@outlook.com",
   github: "https://github.com/bugemarvin",
-  linkedin: "https://www.linkedin.com/in/marvin-kurland-29b799133",
+  linkedin: "https://www.linkedin.com/in/marvin-kurland",
   twitter: "https://twitter.com/bugemarvin", // TODO: replace with actual handle
   medium: "https://medium.com/@bugemarvin",
-  portfolio: "https://www.marvinkurland.dev",
+  portfolio: "https://portfolio-lac-seven-84.vercel.app",
   summary: "I am a product-minded Software Engineer and Machine Learning enthusiast specializing in building scalable, API-driven systems. With a unique background spanning technical leadership as a Co-Founder to full-stack engineering in international environments (UK, US, Nigeria), I deliver high-performance solutions focused on clean architecture, automation, and advanced data-driven experiences using Machine Learning."
 };
 
